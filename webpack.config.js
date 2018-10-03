@@ -3,12 +3,12 @@ const path = require("path"),
     HtmlWebpackPlugin = require("html-webpack-plugin"),
     CopyWebpackPlugin = require('copy-webpack-plugin'),
     autoprefixer = require('autoprefixer'),
-    MiniCssExtractPlugin = require("mini-css-extract-plugin");
+    VueLoaderPlugin = require('vue-loader/lib/plugin');
+    // MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
-        main: path.resolve(__dirname, "src", "index.js"),
-        main: path.join(__dirname, "src/styles", "styles.scss")
+        main: path.resolve(__dirname, "src", "index.js")
     },
     output: {
         filename: "[name].js",
@@ -16,9 +16,11 @@ module.exports = {
         pathinfo: false
     },
     resolve: {
-        extensions: [".js", ".json", ".scss", ".css"],
+        extensions: [".js", ".json", ".scss", ".css", ".vue"],
         alias: {
             fonts: path.join(__dirname, "assets", "fonts"),
+            'vue$': 'vue/dist/vue.js',
+            components: path.join(__dirname, "src", "components")
         }
     },
     watch: true,
@@ -55,8 +57,23 @@ module.exports = {
                         limit: 8000,
                     }
                 }  
-            }
+            },
+            {
+                test: /\.vue$/,
+                use: [
+                    {
+                        loader: 'vue-loader'
+                    }
+                ]
+                
+                
+            },
         ]
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'build'),
+        compress: true,
+        port: 7778
     },
 
     plugins: [
@@ -72,6 +89,7 @@ module.exports = {
                     autoprefixer()
                 ]
             }
-        })
+        }),
+        new VueLoaderPlugin()
     ]
 }
