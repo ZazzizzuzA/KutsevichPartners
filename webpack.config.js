@@ -90,6 +90,11 @@ module.exports = {
                 ]
             }
         }),
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+          })
     ]
 }

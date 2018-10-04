@@ -1,21 +1,26 @@
 @import "_var";
 @import "_reset";
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 .block-nav {
     @include border( 0px, 0px, 1px, 0px, solid, grey);
     height: 70px;
     box-sizing: border-box;
-    background-color: #e2f8f1;
     position: relative;
+    background: #fff;
     &__full-head {
-        padding: 15px 0px;
+        padding: 15px 10px;
         margin: auto;
         height: 100%;
         box-sizing: border-box;
         display: flex;
+        justify-content: center;
+       
         &_logotype {
-            float: left;
+            position: absolute;
+            top: 0;
+            left: 35px;
             height: 100%;
-            padding-left: 10px;
             display: flex;
             z-index: 10;
             margin-right: 40px;
@@ -39,18 +44,52 @@
                 max-width: 300px;
                 height: 100%;
                 display: flex;
+                font-family: 'GothamProRegular', 'GothamProBold', sans-serif;
+                font-weight: 100;
                 span {
-                    letter-spacing: 2px;
+                    letter-spacing: .05em;
                     margin: auto auto;
                 }
             }
             &-link:hover,
             &-link:active {
-                font-weight: 700;
+                font-weight: 900;
                 outline: 0px;
             }
         }
+        &_share{
+            position: absolute;
+            top: 0;
+            right: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            width: 150px;
+        }
     }
+}
+.block-about{
+    display: flex;
+    flex-flow: column wrap;
+    &__slider{
+        height: calc(100vh - 70px);
+        overflow: hidden;
+        &_canvas{
+            width: 100vw;
+            max-height: inherit;
+            .slide{
+                max-height: inherit;
+                h1{
+                    position: absolute;
+                    z-index: 100;
+                    top: 50px;
+                    left: 120px;
+                }
+            }
+        }
+    }
+ 
 }
 
 @import "_adaptive";
