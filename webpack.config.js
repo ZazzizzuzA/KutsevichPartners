@@ -73,7 +73,8 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'build'),
         compress: true,
-        port: 7778
+        port: 7778,
+        historyApiFallback: true
     },
 
     plugins: [
@@ -92,7 +93,7 @@ module.exports = {
         }),
         new VueLoaderPlugin(),
         new webpack.ProvidePlugin({
-            $: 'jquery',
+            // $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
           })

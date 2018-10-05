@@ -3,11 +3,13 @@
 @import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 @import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 .block-nav {
-    @include border( 0px, 0px, 1px, 0px, solid, grey);
+    // @include border( 0px, 0px, 0px, 0px, solid, grey);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.479);
     height: 70px;
     box-sizing: border-box;
     position: relative;
     background: #fff;
+    z-index: 10;
     &__full-head {
         padding: 15px 10px;
         margin: auto;
@@ -50,9 +52,11 @@
                 display: flex;
                 font-family: 'GothamProRegular', 'GothamProBold', sans-serif;
                 font-weight: 100;
+                transform: scaleY(0.9);
                 span {
                     letter-spacing: .05em;
                     margin: auto auto;
+                    
                 }
             }
             &-link:hover,
@@ -72,6 +76,9 @@
             width: 220px;
             a {
                 display: flex;
+            }
+            a:hover{
+                opacity: 0.5;
             }
             .language-change {
                 cursor: pointer;
@@ -93,28 +100,115 @@
     &__slider {
         height: calc(80vh - 70px);
         overflow: hidden;
-        position: relative;
         &_canvas {
             width: 100vw;
             max-height: inherit;
             .slide {
-                max-height: inherit;
-                img {
-                    opacity: 0.4;
-                }
+                max-height: calc(80vh - 70px);
+                position: relative;
                 .slide__title {
                     position: absolute;
-                    z-index: 200;
-                    bottom: 0;
+                    top: 0;
                     left: 0;
+                    z-index: 10;
                     padding: 55px 35px;
+                    font-size: 3vw;
+                    font-stretch: ultra-expanded;
+                    transform: scaleY(0.9);
+                    text-transform: uppercase;
+                    line-height: 1.4em;
                 }
             }
         }
     }
     &__info {
         &_content {
-            width: 33%;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 45px;
+            padding: 0px 35px 50px 35px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            h1{
+                margin-bottom: 45px;
+                width: 100%;
+                font-size: 70px;
+                font-weight: 100;
+            }
+            p{
+                font-size: 28px;
+                line-height: 1.35;
+                width: 50%;
+                box-sizing: border-box;
+            }
+            p:nth-child(2){
+                padding-right: 15px;
+            }
+            p:nth-child(3){
+                padding-left: 15px;
+            }
+        }
+    }
+}
+.block-home {
+    display: flex;
+    flex-flow: column wrap;
+    &__slider {
+        height: calc(100vh - 70px);
+        overflow: hidden;
+        &_canvas {
+            width: 100vw;
+            max-height: inherit;
+            .slide {
+                max-height: calc(100vh - 70px);
+                position: relative;
+                img{
+                    max-height: inherit;
+                }
+                .slide__title {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                    padding: 55px 35px;
+                    font-size: 3vw;
+                    font-stretch: ultra-expanded;
+                    transform: scaleY(0.9);
+                    text-transform: uppercase;
+                    line-height: 1.4em;
+                    color: white;
+                }
+            }
+        }
+    }
+    &__info {
+        &_content {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 45px;
+            padding: 0px 35px 50px 35px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            h1{
+                margin-bottom: 45px;
+                width: 100%;
+                font-size: 70px;
+                font-weight: 100;
+            }
+            p{
+                font-size: 28px;
+                line-height: 1.35;
+                width: 50%;
+                box-sizing: border-box;
+            }
+            p:nth-child(2){
+                padding-right: 15px;
+            }
+            p:nth-child(3){
+                padding-left: 15px;
+            }
         }
     }
 }

@@ -1,10 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import about from "./components/about";
-import contacts from './components/contacts';
-import team from './components/team';
-import projects from './components/projects';
+import About from "./components/about";
+import Contacts from './components/contacts';
+import Team from './components/team';
+import Projects from './components/projects';
+import Lost from './components/lost';
+import Home from './components/home';
+
+
 // import interior from './components/interior';
 // import exterior from './components/exterior';
 
@@ -12,32 +16,39 @@ import projects from './components/projects';
 Vue.use(VueRouter);
 
 let routes = [{
-        path: "/"
+        path: "/",
+        component: Home
     },
     {
         path: "/about",
-        component: about
+        name: 'about',
+        component: About
     },
     {
-        path: "/projects/:id",
-        component: projects
+        path: "/projects/",
+        component: Projects
     },
     {
         path: "/team",
-        component: team
+        component: Team
     },
     {
         path: "/contacts",
-        component: contacts
+        component: Contacts
     },
     {
-        path: "/interior",
-        // component: interior
-    },
+        path: '*',
+        component: Lost
+    }
+    // {
+    //     path: "/interior",
+    //     component: interior
+    // },
     // {
     //     path: "/exterior",
     //     component: exterior
     // }
+
 
 ];
 export default new VueRouter({

@@ -17,7 +17,6 @@ let navigator = new Vue({
 });
 
 let view = new Vue({
-    el: '#app',
     router
-})
+}).$mount('#app')
 
