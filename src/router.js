@@ -11,8 +11,7 @@ import projects from './components/projects';
 
 Vue.use(VueRouter);
 
-let routes = [
-    {
+let routes = [{
         path: "/"
     },
     {
@@ -20,7 +19,7 @@ let routes = [
         component: about
     },
     {
-        path: "/projects",
+        path: "/projects/:id",
         component: projects
     },
     {
@@ -30,11 +29,11 @@ let routes = [
     {
         path: "/contacts",
         component: contacts
-    }
-    // {
-    //     path: "/interior",
-    //     component: interior
-    // },
+    },
+    {
+        path: "/interior",
+        // component: interior
+    },
     // {
     //     path: "/exterior",
     //     component: exterior
@@ -45,4 +44,3 @@ export default new VueRouter({
     mode: "history",
     routes
 })
-    

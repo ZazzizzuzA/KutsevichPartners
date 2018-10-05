@@ -15,7 +15,6 @@
         box-sizing: border-box;
         display: flex;
         justify-content: center;
-       
         &_logotype {
             position: absolute;
             top: 0;
@@ -27,6 +26,11 @@
             img {
                 width: 250px;
                 margin: auto auto;
+                filter: grayscale(1);
+                transition: all 1000ms ease-out;
+            }
+            img:hover {
+                filter: grayscale(0);
             }
         }
         &_navigation {
@@ -57,7 +61,7 @@
                 outline: 0px;
             }
         }
-        &_share{
+        &_share {
             position: absolute;
             top: 0;
             right: 35px;
@@ -65,31 +69,54 @@
             align-items: center;
             justify-content: space-around;
             height: 100%;
-            width: 150px;
+            width: 220px;
+            a {
+                display: flex;
+            }
+            .language-change {
+                cursor: pointer;
+                float: right;
+                border-left: 1px solid black;
+                padding-left: 15px;
+                letter-spacing: 2px;
+            }
+            .language-change:hover {
+                font-weight: 900;
+            }
         }
     }
 }
-.block-about{
+
+.block-about {
     display: flex;
     flex-flow: column wrap;
-    &__slider{
-        height: calc(100vh - 70px);
+    &__slider {
+        height: calc(80vh - 70px);
         overflow: hidden;
-        &_canvas{
+        position: relative;
+        &_canvas {
             width: 100vw;
             max-height: inherit;
-            .slide{
+            .slide {
                 max-height: inherit;
-                h1{
+                img {
+                    opacity: 0.4;
+                }
+                .slide__title {
                     position: absolute;
-                    z-index: 100;
-                    top: 50px;
-                    left: 120px;
+                    z-index: 200;
+                    bottom: 0;
+                    left: 0;
+                    padding: 55px 35px;
                 }
             }
         }
     }
- 
+    &__info {
+        &_content {
+            width: 33%;
+        }
+    }
 }
 
 @import "_adaptive";
