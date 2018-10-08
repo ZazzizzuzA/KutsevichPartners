@@ -2,10 +2,10 @@
     <nav class="block-nav__full-head">
         <router-link id="logoKutsevich" class="block-nav__full-head_logotype" to="/"><img src="http://www.kutsevych.com/templates/kutsevich_main/images/logo.png" alt="logotype"></router-link>
         <div class="block-nav__full-head_navigation">
-            <router-link class="block-nav__full-head_navigation-link" to="/about"><span>О нас</span></router-link>
-            <router-link class="block-nav__full-head_navigation-link" to="/projects"><span>Проекты</span></router-link>
-            <router-link class="block-nav__full-head_navigation-link" to="/team"><span>Команда</span></router-link>
-            <router-link class="block-nav__full-head_navigation-link" to="/contacts"><span>Контакты</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" to="/about"><span>{{variables[0].about}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link"  to="/projects" ><span v-on:mouseover = 'mouseOver()' >{{variables[0].projects}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" to="/team"><span>{{variables[0].team}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" to="/contacts"><span>{{variables[0].contacts}}</span></router-link>
         </div>
         <div class="block-nav__full-head_share" id="iconsShare">
             <a href="https://share.yandex.net/go.xml?service=facebook&url=http%3A%2F%2Fwww.kutsevych.com%2F&title=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%9A%D1%83%D1%86%D0%B5%D0%B2%D0%B8%D1%87%20%2B%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%8B%20-%20%D0%93%D0%9B%D0%90%D0%92%D0%9D%D0%90%D0%AF" class="facebook" target="_blank" title="Facebook">
@@ -25,6 +25,11 @@
             </a>
             <div href="" class="language-change" @click="language = !language">{{ language ? "EN" : "RU"}}</div>
         </div>
+        <div class="block-nav__full-head_categories" v-bind:class="{showCategories: !showCat}" id="categories" v-on:mouseleave = 'mouseLeave()'>
+            <router-link class="block-nav__full-head_navigation-link" to="/interior"><span>Интерьер</span></router-link>
+            <div class="border-line"></div>
+            <router-link class="block-nav__full-head_navigation-link" to="/exterior"><span>Экстерьер</span></router-link>
+        </div>
     </nav>
 </template>
 
@@ -35,7 +40,43 @@ export default {
     name: "navigation",
     data: function () {
         return {
-            language: true
+            language: true,
+            showCat: true,
+            variables: [
+                {
+                    about: "О нас",
+                    projects: "Проекты",
+                    team: "Комманда",
+                    contacts: "Контакты"
+
+
+                },
+                {
+
+                }
+            ]
+        }
+    },
+    methods: {
+        mouseOver: function() {
+            this.showCat = false;
+            let catOut = document.getElementById("categories");
+            catOut.addEventListener("transitionend", () => {
+                if(document.querySelector(".showCategories")) {
+                   catOut.style.zIndex = 0;
+                }
+            })
+        },
+        mouseLeave: function() {
+            
+            let catIn = document.getElementById("categories");
+            if(document.querySelector(".showCategories")) {
+                catIn.style.zIndex = -1;
+            }
+            setTimeout( () => {
+                this.showCat = true;
+            }, 300);
+
         }
     }
 }

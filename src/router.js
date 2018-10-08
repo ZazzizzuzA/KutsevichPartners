@@ -7,47 +7,45 @@ import Team from './components/team';
 import Projects from './components/projects';
 import Lost from './components/lost';
 import Home from './components/home';
-
-
-// import interior from './components/interior';
-// import exterior from './components/exterior';
+import Interior from './components/interior';
+import Exterior from './components/exterior';
 
 
 Vue.use(VueRouter);
-
+//Временное дописываю "KutsevichPartners" для корректной работы через GitHub Pages
 let routes = [{
-        path: "/",
+        path: "/KutsevichPartners",
         component: Home
     },
     {
-        path: "/about",
+        path: "/KutsevichPartners/about",
         name: 'about',
         component: About
     },
     {
-        path: "/projects/",
+        path: "/KutsevichPartners/projects",
         component: Projects
     },
     {
-        path: "/team",
+        path: "/KutsevichPartners/team",
         component: Team
     },
     {
-        path: "/contacts",
+        path: "/KutsevichPartners/contacts",
         component: Contacts
     },
     {
         path: '*',
         component: Lost
+    },
+    {
+        path: "/KutsevichPartners/interior",
+        component: Interior
+    },
+    {
+        path: "/KutsevichPartners/exterior",
+        component: Exterior
     }
-    // {
-    //     path: "/interior",
-    //     component: interior
-    // },
-    // {
-    //     path: "/exterior",
-    //     component: exterior
-    // }
 
 
 ];

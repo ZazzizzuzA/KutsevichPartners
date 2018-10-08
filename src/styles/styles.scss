@@ -13,7 +13,6 @@
     box-sizing: border-box;
     position: relative;
     background: #fff;
-    z-index: 10;
     &__full-head {
         padding: 10px 35px;
         margin: auto;
@@ -59,7 +58,11 @@
                 transform: scaleY(0.9);
                 span {
                     letter-spacing: .05em;
-                    margin: auto auto;
+                    // margin: auto auto;
+                    line-height: 50px;
+                    vertical-align: middle;
+                    height: 100%;
+                    width: 100%;
                     
                 }
             }
@@ -94,6 +97,33 @@
             .language-change:hover {
                 font-weight: 900;
             }
+
+        }   
+        &_categories{
+            width: 100vw;
+            position: absolute;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: -1;
+            transition: all 300ms linear;
+            bottom: 0px;
+            .border-line{
+                width: 1px;
+                background-color: rgb(156, 156, 156);
+                height: 35px;
+                align-self: center;
+            }
+            span{
+                color: #fff;
+                font-size: 12px;
+                letter-spacing: 0.5em;
+            }
+    
+        }
+        .showCategories{
+            transform: translateY(100%);
         }
     }
 }
@@ -104,6 +134,7 @@
     &__slider {
         height: calc(80vh - 70px);
         overflow: hidden;
+        z-index: -2;
         &_canvas {
             width: 100vw;
             max-height: inherit;
@@ -145,6 +176,7 @@
                 line-height: 1.35;
                 width: 50%;
                 box-sizing: border-box;
+                padding: 0px 10px;
             }
             p:nth-child(2){
                 padding-right: 15px;
@@ -161,6 +193,7 @@
     &__slider {
         height: calc(100vh - 70px);
         overflow: hidden;
+        z-index: -2;
         &_canvas {
             width: 100vw;
             max-height: inherit;
@@ -206,6 +239,7 @@
                 line-height: 1.35;
                 width: 50%;
                 box-sizing: border-box;
+                padding: 0px 10px;
             }
             p:nth-child(2){
                 padding-right: 15px;
