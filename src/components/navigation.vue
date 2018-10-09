@@ -2,10 +2,10 @@
     <nav class="block-nav__full-head">
         <router-link id="logoKutsevich" class="block-nav__full-head_logotype" to="/KutsevichPartners"><img src="http://www.kutsevych.com/templates/kutsevich_main/images/logo.png" alt="logotype"></router-link>
         <div class="block-nav__full-head_navigation">
-            <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/about"><span>{{titles[language.numOfLang].about}}</span></router-link>
-            <router-link class="block-nav__full-head_navigation-link"  to="/KutsevichPartners/projects" ><span v-on:mouseover = 'mouseOver()' >{{titles[language.numOfLang].projects}}</span></router-link>
-            <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/team"><span>{{titles[language.numOfLang].team}}</span></router-link>
-            <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/contacts"><span>{{titles[language.numOfLang].contacts}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" v-bind:class="{ active: isActive }" to="/KutsevichPartners/about"><span>{{titles[language.numOfLang].about}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link"  to="/KutsevichPartners/projects" v-bind:class="{ active: isActive }"><span v-on:mouseover = 'mouseOver()' >{{titles[language.numOfLang].projects}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/team" v-bind:class="{ active: isActive }"><span>{{titles[language.numOfLang].team}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/contacts" v-bind:class="{ active: isActive }"><span>{{titles[language.numOfLang].contacts}}</span></router-link>
         </div>
         <div class="block-nav__full-head_share" id="iconsShare">
             <a href="https://share.yandex.net/go.xml?service=facebook&url=http%3A%2F%2Fwww.kutsevych.com%2F&title=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%9A%D1%83%D1%86%D0%B5%D0%B2%D0%B8%D1%87%20%2B%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%8B%20-%20%D0%93%D0%9B%D0%90%D0%92%D0%9D%D0%90%D0%AF" class="facebook" target="_blank" title="Facebook">
@@ -35,19 +35,15 @@
 
 
 <script>
+import language from "../settings/language";
 
 export default {
     name: "navigation",
     data: function () {
         return {
-            language: 
-            {
-                english: false,
-                // 0 - русский язык; 1 - английский
-                numOfLang: 0,
-            },
+            isActive: true,
             showCat: true, 
-
+            language,
             titles: [
                 {
                     about: "О нас",
@@ -75,7 +71,8 @@ export default {
             this.showCat = false;
             let catOut = document.getElementById("categories");
             catOut.addEventListener("transitionend", () => {
-                if(document.querySelector(".showCategories")) {
+
+                if(document.querySelector(".showCategories") ) {
                    catOut.style.zIndex = 0;
                 }
             })
@@ -88,7 +85,7 @@ export default {
             }
             setTimeout( () => {
                 this.showCat = true;
-            }, 300);
+            }, 150);
 
         },
         changeLanguage() {
@@ -98,3 +95,8 @@ export default {
     },
 }
 </script>
+<style lang="scss">
+    .router-link-active{
+        font-weight: 900;
+    }
+</style>
