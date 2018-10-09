@@ -58,6 +58,9 @@ export default {
                 slideTransition: "ease-in-out",
                 autoplay: true,
                 autoplayTimeout: 8000,
+                autoplaySpeed: 8000,
+                animateOut: "fadeOut",
+                animateIn: "fadeIn",
                 responsive:{
                     0:{
                         items:1

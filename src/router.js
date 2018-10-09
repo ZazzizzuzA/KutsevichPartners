@@ -12,9 +12,9 @@ import Exterior from './components/exterior';
 
 
 Vue.use(VueRouter);
-//Временное дописываю "KutsevichPartners" для корректной работы через GitHub Pages
+
 let routes = [{
-        path: "/KutsevichPartners",
+        path: "/KutsevichPartners/",
         component: Home
     },
     {
