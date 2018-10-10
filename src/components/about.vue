@@ -3,16 +3,16 @@
         <div class="block-about__slider">
             <div class="owl-carousel owl-theme block-about__slider_canvas">
                 <div class="slide">
-                    <img src="http://web3.ficos.com/hitoffice/wp-content/uploads/sites/5/2014/01/Fotolia_13811963_L.jpg" alt="">  
+                    <img src="../../assets/images/projects/2/007.jpg" alt="">  
                        <p class="slide__title">
                            <span>Проектирование жилых</span><br> <strong>и общественных зданий</strong>
                         </p>
                 </div>
                 <div class="slide">
-                    <img src="http://www.theatresolutions.net/wp-content/uploads/2017/02/life-as-an-architect-hero-img.jpeg" alt="">
+                    <img src="../../assets/images/projects/1/003.jpg" alt="">
                 </div>
                 <div class="slide">
-                    <img src="https://images.homify.com/images/a_0,c_fill,f_auto,h_900,q_auto,w_1920/v1481868947/p/photo/image/1738517/04-2/modern-doma-photos-in-seryy-by-autchawin-architect-co-ltd.jpg" alt="">
+                    <img src="../../assets/images/projects/2/003.jpg" alt="">
                 </div>
             </div>
         </div>

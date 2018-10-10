@@ -48,7 +48,7 @@ export default {
                 {
                     about: "О нас",
                     projects: "Проекты",
-                    team: "Комманда",
+                    team: "Команда",
                     contacts: "Контакты",
                     interior: "Интерьер",
                     exterior: "Экстерьер"

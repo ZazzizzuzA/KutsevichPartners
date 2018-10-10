@@ -19,7 +19,10 @@
                         <img src="../../assets/images/icons/google-plus.png" alt="G+">
                     </a>
             </div>
-            <!-- <div class="block-footer__row_partners"></div> -->
+            <div class="block-footer__row_adress">
+                <span class="title">{{contacts[language.numOfLang].title}}</span><br><span>{{contacts[language.numOfLang].adress}}</span><br>
+                <span class="title">Email:</span><br><span><a :href="'mailto:'+contacts[language.numOfLang].email" target="_blank">{{contacts[language.numOfLang].email}}</a></span>
+            </div>
         </div>
     </footer>
 </template>
@@ -29,6 +32,23 @@ export default {
     name: "downBlock",
     data() {
         return {
+            language,
+            contacts: [
+                {
+                    title: "Адрес:",
+                    adress: "г.Киев, ул. Васильковская, 13, офис 32",
+                    email: "bkutsevych@yahoo.com"
+                },
+                {
+                    title: "Adress:",
+                    adress: "Kyiv, st. Vasilkovskaya, 13, office 32",
+                    email: "bkutsevych@yahoo.com"
+                }
+            ], 
+
+            
+
+            
 
         }
     }

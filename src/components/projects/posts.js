@@ -18,7 +18,7 @@ export default [
         {
             title: "Жилой комплекс",
             image: "./assets/images/projects/3/005.jpg",
-            country: "Марибор, Сдовения",
+            country: "Марибор, Словения",
             year: 2018,
             stage: "Стадия проект",
             id: 3

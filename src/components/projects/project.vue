@@ -24,6 +24,7 @@ import language from "../../settings/language";
             let projectId = this.$route.params.id;
 
             this.project = this.posts[this.language.numOfLang][projectId];
+            this.project.image = "." + this.project.image;
 
         }
     }

@@ -322,14 +322,46 @@
     }
 }
 
+.block-contacts {
+    box-sizing: border-box;
+    height: calc(100vh - 265px);
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    &__city {
+        width: 100vw;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 4px;
+        text-align: center;
+        padding: 40px 0px;
+        background: linear-gradient(0.4turn, #1466ff, #edf8e1, #f0ff17);
+        z-index: -2;
+    }
+    &__adress {
+        width: 100vw;
+        background: #f6ffec;
+        text-align: center;
+        flex-grow: 2;
+        span {
+            line-height: 100px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+    }
+}
+
 .block-footer {
     background-color: rgb(220, 221, 222);
     &__row {
         padding: 0px 35px;
         display: flex;
-        justify-content: flex-end;
+        flex-direction: row-reverse;
+        flex: 1 1 auto;
         &_follow {
             padding: 20px 0px 30px;
+            ;
             h4 {
                 margin-bottom: 22px;
                 font-weight: 800;
@@ -346,6 +378,27 @@
             }
             a:hover {
                 opacity: 0.4;
+            }
+        }
+        &_adress {
+            padding: 20px 0px 30px;
+            margin-right: 50px;
+            width: 500px;
+            .title {
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 12px;
+            }
+            span {
+                line-height: 25px;
+                font-weight: 900;
+                a {
+                    text-decoration: none;
+                    color: #242424;
+                    &:hover {
+                        opacity: 0.4;
+                    }
+                }
             }
         }
     }
