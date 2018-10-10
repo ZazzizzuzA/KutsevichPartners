@@ -1,41 +1,51 @@
 export default [
-    [
-        {
-            title: "Проект 1",
-            image: "./assets/images/projects/project_1.jpg",
-            country: "Украина, Киев",
+    [{
+            title: "Многофункциональный центр",
+            image: "./assets/images/projects/1/001.jpg",
+            country: "Эр-Рияд, Саудоваская Аравия",
+            year: 2017,
+            stage: "Концепция",
             id: 1
         },
-                        {
-            title: "Проект 2",
-            image: "./assets/images/projects/project_2.jpg",
-            country: "США, Нью-Йорк",
+        {
+            title: "Многофункциональный центр",
+            image: "./assets/images/projects/2/001.jpg",
+            country: "Джидда, Саудоваская Аравия",
+            year: 2018,
+            stage: "Концепция",
             id: 2
         },
-                        {
-            title: "Проект 3",
-            image: "./assets/images/projects/project_3.jpg",
-            country: "Украина, Львов",
+        {
+            title: "Жилой комплекс",
+            image: "./assets/images/projects/3/005.jpg",
+            country: "Марибор, Сдовения",
+            year: 2018,
+            stage: "Стадия проект",
             id: 3
         }
     ],
-    [
-        {
-            title: "Project 1",
-            image: "./assets/images/projects/project_1.jpg",
-            country: "Ukraine, Kyiv",
+    [{
+            title: "Mixed-Use Centre",
+            image: "./assets/images/projects/1/001.jpg",
+            country: "Riyadh, KSA",
+            year: 2017,
+            stage: "Concept Design",
             id: 1
         },
-                        {
-            title: "Project 2",
-            image: "./assets/images/projects/project_2.jpg",
-            country: "USA, New-York",
+        {
+            title: "Mixed-Use Centre",
+            image: "./assets/images/projects/2/001.jpg",
+            country: "Jeddah, KSA",
+            year: 2018,
+            stage: "Concept Design",
             id: 2
         },
-                        {
-            title: "Project 3",
-            image: "./assets/images/projects/project_3.jpg",
-            country: "Ukraine, Lviv",
+        {
+            title: "Residential complex",
+            image: "./assets/images/projects/3/005.jpg",
+            country: "Maribor, Slovenia",
+            year: 2018,
+            stage: "Schematic Design",
             id: 3
         }
     ]

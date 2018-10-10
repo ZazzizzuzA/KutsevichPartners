@@ -1,6 +1,6 @@
 <template>
     <nav class="block-nav__full-head">
-        <router-link id="logoKutsevich" class="block-nav__full-head_logotype" to="/KutsevichPartners"><img src="http://www.kutsevych.com/templates/kutsevich_main/images/logo.png" alt="logotype"></router-link>
+        <router-link id="logoKutsevich" class="block-nav__full-head_logotype" to="/KutsevichPartners"><img src="../../assets/images/logo.png" alt="logotype"></router-link>
         <div class="block-nav__full-head_navigation">
             <router-link class="block-nav__full-head_navigation-link" v-bind:class="{ active: isActive }" to="/KutsevichPartners/about"><span>{{titles[language.numOfLang].about}}</span></router-link>
             <router-link class="block-nav__full-head_navigation-link"  to="/KutsevichPartners/projects" v-bind:class="{ active: isActive }"><span v-on:mouseover = 'mouseOver()' >{{titles[language.numOfLang].projects}}</span></router-link>
@@ -85,7 +85,7 @@ export default {
             }
             setTimeout( () => {
                 this.showCat = true;
-            }, 150);
+            }, 100);
 
         },
         changeLanguage() {

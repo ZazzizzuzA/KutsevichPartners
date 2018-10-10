@@ -24,6 +24,7 @@
     </footer>
 </template>
 <script>
+import language from "../settings/language";
 export default {
     name: "downBlock",
     data() {
