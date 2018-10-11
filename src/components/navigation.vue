@@ -26,9 +26,9 @@
             <div href="" class="language-change" @click="changeLanguage()">{{ language.english ? "EN" : "РУ"}}</div>
         </div>
         <div class="block-nav__full-head_categories" v-bind:class="{showCategories: !showCat}" id="categories" v-on:mouseleave = 'mouseLeave()'>
-            <router-link class="block-nav__full-head_navigation-link" to="/interior"><span>{{titles[language.numOfLang].interior}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" :to="{ name: 'category', params: { category: 'interior' } }"><span>{{titles[language.numOfLang].interior}}</span></router-link>
             <div class="border-line"></div>
-            <router-link class="block-nav__full-head_navigation-link" to="/exterior"><span>{{titles[language.numOfLang].exterior}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" :to="{ name: 'category', params: { category: 'exterior' } }"><span>{{titles[language.numOfLang].exterior}}</span></router-link>
         </div>
     </nav>
 </template>

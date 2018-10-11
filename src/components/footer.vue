@@ -44,13 +44,14 @@ export default {
                     adress: "Kyiv, st. Vasilkovskaya, 13, office 32",
                     email: "bkutsevych@yahoo.com"
                 }
-            ], 
-
-            
-
-            
-
+            ],
         }
+    },
+    mounted() {
+        setTimeout( () => {
+
+        }, 2000)
     }
+
 }
 </script>

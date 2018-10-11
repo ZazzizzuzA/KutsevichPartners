@@ -7,8 +7,7 @@ import Team from './components/team';
 import Projects from './components/projects/projects';
 import Lost from './components/lost';
 import Home from './components/home';
-import Interior from './components/interior';
-import Exterior from './components/exterior';
+import Category from './components/category';
 import Project from './components/projects/project';
 
 
@@ -41,12 +40,9 @@ let routes = [{
         component: Lost
     },
     {
-        path: "/KutsevichPartners/interior/",
-        component: Interior
-    },
-    {
-        path: "/KutsevichPartners/exterior/",
-        component: Exterior
+        path: "/KutsevichPartners/projects/:category/",
+        name: 'category',
+        component: Category
     },
     {
         path: "/KutsevichPartners/project/:id/",
