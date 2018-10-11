@@ -3,13 +3,12 @@ import VueRouter from "vue-router";
 
 import About from "./components/about";
 import Contacts from './components/contacts';
-import Team from './components/team';
+import Team from './components/team/team';
 import Projects from './components/projects/projects';
 import Lost from './components/lost';
 import Home from './components/home';
 import Category from './components/category';
 import Project from './components/projects/project';
-
 
 Vue.use(VueRouter);
 

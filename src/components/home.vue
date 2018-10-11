@@ -2,19 +2,17 @@
     <div class="block-home">
         <div class="block-home__slider">
             <div class="owl-carousel owl-theme block-home__slider_canvas">
-                <div class="slide">
-                    <img src="http://wp.widewallpapers.ru/2k/interior/panoramic-window-rooms/1920x1080/panoramic-window-room-1920x1080-011.jpg" alt="">
+                <div class="slide" style="background: url(./assets/images/projects/5/006.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+      
                           
                        <p class="slide__title">
                            <span>Проектирование жилых</span><br> <strong>и общественных зданий</strong>
                         </p>
 
                 </div>
-                <div class="slide">
-                    <img src="http://lookw.ru/1/635/1402263679-photoshop-48-cr.jpg" alt="">
+                <div class="slide" style="background: url(./assets/images/projects/1/002.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
                 </div>
-                <div class="slide">
-                    <img src="http://www.fullhdoboi.ru/_ph/8/421890363.jpg?1533705537" alt="">
+                <div class="slide" style="background: url(./assets/images/projects/2/003.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
                 </div>
             </div>
         </div>
@@ -44,7 +42,15 @@ import language from "../settings/language";
 export default {
     data: function() {
         return {
-            
+            language,
+            about: [
+                {
+                    text: ""
+                },
+                {
+                    text: ""
+                }
+            ]
         }
     },
     mounted: function() {

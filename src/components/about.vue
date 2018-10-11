@@ -2,14 +2,14 @@
     <div class="block-about">
         <div class="block-about__slider">
             <div class="owl-carousel owl-theme block-about__slider_canvas">
-                <div class="slide" style="background: url(../../assets/images/projects/2/007.jpg) no-repeat; background-size: cover; background-position: 50% 80%">
+                <div class="slide" style="background: url(./assets/images/projects/2/007.jpg) no-repeat; background-size: cover; background-position: 50% 80%">
                        <p class="slide__title">
                            <span>Проектирование жилых</span><br> <strong>и общественных зданий</strong>
                         </p>
                 </div>
-                <div class="slide" style="background: url(../../assets/images/projects/1/003.jpg) no-repeat; background-size: cover; background-position: 50% 80%">
+                <div class="slide" style="background: url(./assets/images/projects/1/003.jpg) no-repeat; background-size: cover; background-position: 50% 80%">
                 </div>
-                <div class="slide" style="background: url(../../assets/images/projects/2/003.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+                <div class="slide" style="background: url(./assets/images/projects/2/003.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
                 </div>
             </div>
         </div>
