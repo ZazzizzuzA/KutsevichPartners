@@ -1,6 +1,6 @@
 <template>
     <div class="post">
-        <div class="post__project-foto" :style="{ backgroundImage: 'url(.' + project.image + ')'}">
+        <div class="post__project-foto" :style="{ backgroundImage: 'url(.' + project.image[0] + ')'}">
             <span class="post__project-foto_title">{{project.title}}</span>
         </div>
         <div class="post__project-info"></div>
