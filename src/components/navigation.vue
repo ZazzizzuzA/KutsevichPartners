@@ -70,22 +70,28 @@ export default {
         mouseOver: function() {
             this.showCat = false;
             let catOut = document.getElementById("categories");
-            catOut.addEventListener("transitionend", () => {
 
-                if(document.querySelector(".showCategories") ) {
-                   catOut.style.zIndex = 0;
-                }
-            })
+            if( document.querySelector(".showCategories") ) {
+                catOut.style.zIndex = 0;
+            }            
         },
         mouseLeave: function() {
             
             let catIn = document.getElementById("categories");
+            catIn.addEventListener( "transitionend", () => {
+                setTimeout( () => {
+                    if (document.querySelector(".showCategories") === false && catIn.style.zIndex === 0) {
+                        catIn.style.zIndex = -1;
+                    }
+                }, 350)
+            } )
             if(document.querySelector(".showCategories")) {
                 catIn.style.zIndex = -1;
             }
             setTimeout( () => {
                 this.showCat = true;
-            }, 100);
+                
+            }, 115);
 
         },
         changeLanguage() {

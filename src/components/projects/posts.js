@@ -69,7 +69,7 @@ export default [
             image: [
                 "./assets/images/projects/5/001.jpg",
                 "./assets/images/projects/5/002.jpg",
-                "./assets/images/projects/5/003.jpg",
+                "../../../../assets/images/projects/5/003.jpg",
                 "./assets/images/projects/5/004.jpg",
                 "./assets/images/projects/5/005.jpg",
                 "./assets/images/projects/5/006.jpg",
