@@ -3,7 +3,7 @@
         <router-link id="logoKutsevich" class="block-nav__full-head_logotype" to="/KutsevichPartners"><img src="../../assets/images/logo.png" alt="logotype"></router-link>
         <div class="block-nav__full-head_navigation">
             <router-link class="block-nav__full-head_navigation-link" v-bind:class="{ active: isActive }" to="/KutsevichPartners/about"><span>{{titles[language.numOfLang].about}}</span></router-link>
-            <router-link class="block-nav__full-head_navigation-link"  to="/KutsevichPartners/projects" v-bind:class="{ active: isActive }"><span v-on:mouseover = 'mouseOver()' >{{titles[language.numOfLang].projects}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link"  to="/KutsevichPartners/projects" v-bind:class="{ active: isActive }"><span v-on:mouseover='mouseOver()' v-on:mouseleave="showCat = showCat" >{{titles[language.numOfLang].projects}}</span></router-link>
             <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/team" v-bind:class="{ active: isActive }"><span>{{titles[language.numOfLang].team}}</span></router-link>
             <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/contacts" v-bind:class="{ active: isActive }"><span>{{titles[language.numOfLang].contacts}}</span></router-link>
         </div>
@@ -25,7 +25,7 @@
             </a>
             <div href="" class="language-change" @click="changeLanguage()">{{ language.english ? "EN" : "РУ"}}</div>
         </div>
-        <div class="block-nav__full-head_categories" v-bind:class="{showCategories: !showCat}" id="categories" v-on:mouseleave = 'mouseLeave()'>
+        <div class="block-nav__full-head_categories" v-bind:class="{showCategories: !showCat}" id="categories" v-on:mouseleave='mouseLeave()'>
             <router-link class="block-nav__full-head_navigation-link" :to="{ name: 'category', params: { category: 'interior' } }"><span>{{titles[language.numOfLang].interior}}</span></router-link>
             <div class="border-line"></div>
             <router-link class="block-nav__full-head_navigation-link" :to="{ name: 'category', params: { category: 'exterior' } }"><span>{{titles[language.numOfLang].exterior}}</span></router-link>
@@ -70,29 +70,17 @@ export default {
         mouseOver: function() {
             this.showCat = false;
             let catOut = document.getElementById("categories");
+            catOut.classList.add("showZIndex");
 
-            if( document.querySelector(".showCategories") ) {
-                catOut.style.zIndex = 0;
-            }            
         },
         mouseLeave: function() {
-            
+
             let catIn = document.getElementById("categories");
-            catIn.addEventListener( "transitionend", () => {
-                setTimeout( () => {
-                    if (document.querySelector(".showCategories") === false && catIn.style.zIndex === 0) {
-                        catIn.style.zIndex = -1;
-                    }
-                }, 350)
-            } )
-            if(document.querySelector(".showCategories")) {
-                catIn.style.zIndex = -1;
-            }
+            catIn.classList.remove("showZIndex");
+
             setTimeout( () => {
                 this.showCat = true;
-                
-            }, 115);
-
+            }, 300)
         },
         changeLanguage() {
             this.language.english = !this.language.english;
