@@ -48,15 +48,17 @@ module.exports = {
                 } 
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
-                use: {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                {
                     loader: "url-loader",
                     options: {
                         emitFile: false,
                         name: '[path][name].[ext]',
                         limit: 8000,
                     }
-                }  
+                }
+            ]
             },
             {
                 test: /\.vue$/,
@@ -65,8 +67,6 @@ module.exports = {
                         loader: 'vue-loader'
                     }
                 ]
-                
-                
             },
         ]
     },
@@ -96,6 +96,8 @@ module.exports = {
             // $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
-          })
+        })
+
+
     ]
 }

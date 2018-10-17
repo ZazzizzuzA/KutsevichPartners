@@ -15,13 +15,13 @@
         </div>
         <div class="block-about__team">
             <div class="block-about__team_content" v-for="(person, index) in persons[language.numOfLang]" :key="index">
-                <div class="block-about__team_content-foto"></div>
+                <div class="block-about__team_content-foto" v-bind:style="{ backgroundImage: 'url(' + person.image + ')'}"></div>
                 <div class="block-about__team_content-desc">
                     <span class="name">{{person.name}}</span>
                     <strong class="name">{{person.soname}}</strong><br>
                     <span class="position">{{person.position}}</span>
-                    <h5>Описание/История/Легенда/Биография</h5>
-                    <p>{{person.description}}</p>
+                    <h5>{{person.titleToDesc}}</h5>
+                    <p v-for="(desc, i) in persons[language.numOfLang][index].description" :key="i">{{desc}}<br><br></p>
                 </div>
             </div>
         </div>
@@ -39,9 +39,8 @@ export default {
         }
     },
     mounted: function() {
-
+        console.log(persons[language.numOfLang].description)
         // Owl-carousel
-
         jQuery(document).ready(function(){
             jQuery('.owl-carousel').owlCarousel({
                 loop:true,

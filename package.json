@@ -49,6 +49,8 @@
   "browserslist": [
     "last 1 version",
     "> 1%",
-    "IE 10"
+    "IE 10",
+    "IE 9",
+    "IE 8"
   ]
 }

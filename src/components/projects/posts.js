@@ -138,7 +138,22 @@ export default [
             stage: "",
             id: 8,
             type: "exterior"
+        },
+        {
+            title: "Реконструкция Многофункционального центра",
+            image: [
+                "./assets/images/projects/9/001.jpg",
+                "./assets/images/projects/9/002.jpg",
+                "./assets/images/projects/9/003.jpg",
+                "./assets/images/projects/9/004.jpg"
+            ],
+            country: "Джидда, Саудовская Аравия",
+            year: 2018,
+            stage: "Проект",
+            id: 9,
+            type: "exterior"
         }
+
     ],
     // English
     [{
@@ -278,6 +293,20 @@ export default [
             year: 2016,
             stage: "",
             id: 8,
+            type: "exterior"
+        },
+        {
+            title: "Reconstruction of Mixed-Use Centre",
+            image: [
+                "./assets/images/projects/9/001.jpg",
+                "./assets/images/projects/9/002.jpg",
+                "./assets/images/projects/9/003.jpg",
+                "./assets/images/projects/9/004.jpg"
+            ],
+            country: "Jeddah, KSA",
+            year: 2018,
+            stage: "Schematic Design",
+            id: 9,
             type: "exterior"
         }
     ]
