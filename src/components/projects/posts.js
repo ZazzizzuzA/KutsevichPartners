@@ -12,7 +12,8 @@ export default [
             year: 2017,
             stage: "Концепция",
             id: 1,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Многофункциональный центр",
@@ -30,7 +31,8 @@ export default [
             year: 2018,
             stage: "Концепция",
             id: 2,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Жилой комплекс",
@@ -45,7 +47,8 @@ export default [
             year: 2018,
             stage: "Стадия проект",
             id: 3,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Индивидуальный жилой дом",
@@ -62,7 +65,8 @@ export default [
             year: 2016,
             stage: "",
             id: 4,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Бильярдный клуб \"Буффало\"",
@@ -79,7 +83,8 @@ export default [
             year: 2012,
             stage: "Реализован",
             id: 5,
-            type: "interior"
+            type: "interior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Реконструкция Многофункционального центра",
@@ -97,7 +102,8 @@ export default [
             year: 2018,
             stage: "Проект",
             id: 6,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Индивидуальный жилой дом",
@@ -120,7 +126,8 @@ export default [
             year: 2012,
             stage: "",
             id: 7,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Индивидуальный жилой дом",
@@ -137,7 +144,8 @@ export default [
             year: 2016,
             stage: "",
             id: 8,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Реконструкция Многофункционального центра",
@@ -151,7 +159,8 @@ export default [
             year: 2018,
             stage: "Проект",
             id: 9,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         }
 
     ],
@@ -168,7 +177,8 @@ export default [
             year: 2017,
             stage: "Concept Design",
             id: 1,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Mixed-Use Centre",
@@ -186,7 +196,8 @@ export default [
             year: 2018,
             stage: "Concept Design",
             id: 2,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Residential complex",
@@ -201,7 +212,8 @@ export default [
             year: 2018,
             stage: "Schematic Design",
             id: 3,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Private house",
@@ -218,7 +230,8 @@ export default [
             year: 2016,
             stage: "",
             id: 4,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Biliard club Buffalo",
@@ -235,7 +248,8 @@ export default [
             year: 2012,
             stage: "Realized",
             id: 5,
-            type: "interior"
+            type: "interior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Reconstruction of Mixed-Use Centre",
@@ -253,7 +267,8 @@ export default [
             year: 2018,
             stage: "Schematic Design",
             id: 6,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Private house",
@@ -276,7 +291,8 @@ export default [
             year: 2012,
             stage: "",
             id: 7,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Private house",
@@ -293,7 +309,8 @@ export default [
             year: 2016,
             stage: "",
             id: 8,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         },
         {
             title: "Reconstruction of Mixed-Use Centre",
@@ -307,7 +324,8 @@ export default [
             year: 2018,
             stage: "Schematic Design",
             id: 9,
-            type: "exterior"
+            type: "exterior",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur, accusantium vel nulla a ipsum explicabo dicta, minus laudantium cumque dolore, quam pariatur eius sed officia enim ea in? Dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia natus iusto voluptas, cumque numquam consequuntur harum maiores praesentium aut cupiditate suscipit quod blanditiis, aperiam optio reprehenderit error ducimus aspernatur explicabo!"
         }
     ]
 ]

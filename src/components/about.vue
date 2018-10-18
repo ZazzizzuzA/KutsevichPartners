@@ -14,8 +14,9 @@
             </div>
         </div>
         <div class="block-about__info">
+            <h1>{{title[language.numOfLang]}}</h1>
             <div class="block-about__info_content">
-                <h1>О НАС</h1>
+                
                 <p>
                     Архитектурная студия «КУЦЕВИЧ+ПАРТНЕРЫ» выполняет все стадии архитектурного проектирования: предпроектные предложения, эскизный проект, стадия проект, рабочая документация, дизайн-проект и авторский надзор.
                                         
@@ -40,8 +41,11 @@ import language from "../settings/language";
 export default {
     data: function() {
         return {
-            
-            
+            language,
+            title: [
+                "О нас",
+                "About"
+            ]
         }
     },
     mounted: function() {
