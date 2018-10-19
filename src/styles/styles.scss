@@ -426,7 +426,6 @@
         background-position: 50% 50%;
         background-size: cover;
         height: calc(85vh - 70px);
-        margin-top: 45px;
         position: relative;
         &_title {
             position: absolute;
@@ -547,6 +546,44 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
+    overflow: visible;
+    img{
+        height: 100%;
+    }
+    .owl-stage-outer{
+        height: 100%;
+        .owl-stage{
+            height: 100%;
+            .owl-item{
+                height: 100%;
+            }
+        }
+    }
+    .owl-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        height: 100%;
+        .owl-prev,
+        .owl-next{
+            outline: none;
+            
+            span{
+                font-size: 150px;
+                color: #fff;
+                text-shadow: 5px 4px 3px #000000;
+                opacity: 0.3;
+                transition: all 400ms ease-out;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+
+    }
 }
 
 .block-contacts {

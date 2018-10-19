@@ -28,7 +28,7 @@
         </div>
         <div class="post__gallery owl-carousel owl-theme">
 
-            <div class="post__gallery_item" v-for="(image, index) in project[language.numOfLang].image" :key="index" v-bind:style="{ backgroundImage: 'url(.' + image + ')'}" @click="popupOpen()">
+            <div class="post__gallery_item" v-for="(image, index) in project[language.numOfLang].image" :key="index" v-bind:style="{ backgroundImage: 'url(.' + image + ')'}"  @click="popupOpen({index})">
                 <div class="post__gallery_item-popup"></div>
             </div>
         </div>
@@ -48,28 +48,36 @@ import language from "../../settings/language";
             }
         },
         methods: {
-            popupOpen: function() {
+            popupOpen: function(index) {
                 let shadow = document.querySelector(".popup-shadow"),
                     popupWrapper = document.createElement("div"),
-                    popupItem = document.createElement("img"),
+                    popupItems = [],
                     arrImg = this.project[language.numOfLang].image,
+                    firstShowItem = document.createElement("img"),
                     parent = document.getElementsByTagName('body')[0];
+
 
                     popupWrapper.classList.add("owl-carousel");
                     popupWrapper.classList.add("popup-center-show");
 
-                for (let img of this.project[language.numOfLang].image) {
+                    firstShowItem.src = "." + arrImg[index.index];
 
-                    
-                    
-                }
-                    popupItem.src = arrImg[(this.project[language.numOfLang].id)];
+                    popupWrapper.appendChild(firstShowItem);
+                    parent.appendChild(popupWrapper); 
+  
+                for (let i = 0; i < arrImg.length; i++) {
 
-                    parent.appendChild(popupWrapper);
-                    popupWrapper.appendChild(popupItem);
-                    popupWrapper.appendChild(popupItem);
-                    popupWrapper.appendChild(popupItem);
-
+                        popupItems[i] = document.createElement("img");
+                        let image = popupItems[i];
+                        image.src = "." + arrImg[i];
+                        if (i === +index.index){
+                            popupItems[index.index] = firstShowItem;
+                        }
+                        popupWrapper.appendChild(image);
+                }        
+                
+                // console.log(popupItems, arrImg[index.index]);
+               
                 shadow.classList.remove("popup-hide");
                 shadow.classList.add("popup-show");
 
@@ -82,6 +90,10 @@ import language from "../../settings/language";
                     slideTransition: "linear",
                     autoplay: false,
                     rewind: true,
+                    animateOut: "fadeOut",
+                    animateIn: "fadeIn",
+                    navSpeed: 2000,
+                    navClass: ["owl-prev","owl-next"],
                     responsive:{
                         0:{
                             items:1
@@ -95,8 +107,6 @@ import language from "../../settings/language";
                     }
                 });
             });
-
-
             },
             popupClose: function() {
                 let shadow = document.querySelector(".popup-shadow"),
@@ -128,7 +138,7 @@ import language from "../../settings/language";
                 dots: false,
                 slideTransition: "linear",
                 autoplay: true,
-                autoplayTimeout: 6000,
+                autoplayTimeout: 5500,
                 autoplaySpeed: 5500,
                 responsive:{
                     0:{
