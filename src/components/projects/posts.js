@@ -3,10 +3,10 @@ export default [
     [{
             title: "Многофункциональный центр",
             image: [
-                "./assets/images/projects/1/001.jpg",
-                "./assets/images/projects/1/002.jpg",
-                "./assets/images/projects/1/003.jpg",
-                "./assets/images/projects/1/004.jpg"
+                "../assets/images/projects/1/001.jpg",
+                "../assets/images/projects/1/002.jpg",
+                "../assets/images/projects/1/003.jpg",
+                "../assets/images/projects/1/004.jpg"
             ],
             country: "Эр-Рияд, Саудоваская Аравия",
             year: 2017,
@@ -201,7 +201,7 @@ export default [
         },
         {
             title: "Residential complex",
-            image:  [
+            image: [
                 "./assets/images/projects/3/001.jpg",
                 "./assets/images/projects/3/002.jpg",
                 "./assets/images/projects/3/003.jpg",

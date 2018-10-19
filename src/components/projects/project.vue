@@ -1,25 +1,25 @@
 <template>
     <div class="post">
         <div class="post__project-foto" :style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[0] + ')'}">
-            <span class="post__project-foto_title">{{project[language.numOfLang].title}}</span>
+            <span class="post__project-foto_title"><strong>{{project[language.numOfLang].title}}</strong><br> {{project[language.numOfLang].country}}</span>
         </div>
         <div class="post__project-info">
             <div class="post__project-info_article">
-                <div class="post__project-info_article-foto" v-bind:style="{ backgroundImage: 'url(' + project[language.numOfLang].image[1] + ')'}"></div>
+                <div class="post__project-info_article-foto" v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[1] + ')'}"></div>
                 <div class="post__project-info_article-text">
                     <h3>Название абзаца 1</h3>
                     <p>{{project[language.numOfLang].description}}</p>
                 </div>
             </div>
             <div class="post__project-info_article">
-                <div class="post__project-info_article-foto" v-bind:style="{ backgroundImage: 'url(' + project[language.numOfLang].image[2] + ')'}"></div>
+                <div class="post__project-info_article-foto" v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[2] + ')'}"></div>
                 <div class="post__project-info_article-text">
                     <h3>Название абзаца 2</h3>
                     <p>{{project[language.numOfLang].description}}</p>
                 </div>
             </div>
             <div class="post__project-info_article">
-                <div class="post__project-info_article-foto" v-bind:style="{ backgroundImage: 'url(' + project[language.numOfLang].image[3] + ')'}"></div>
+                <div class="post__project-info_article-foto" v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[3] + ')'}"></div>
                 <div class="post__project-info_article-text">
                     <h3>Название абзаца 3</h3>
                     <p>{{project[language.numOfLang].description}}</p>
@@ -28,8 +28,8 @@
         </div>
         <div class="post__gallery owl-carousel owl-theme">
 
-            <div class="post__gallery_item" v-for="(image, index) in project[language.numOfLang].image" :key="index" v-bind:style="{ backgroundImage: 'url(' + image + ')'}" @click="popupOpen()">
-                <div class="post__gallery_item-popup" ></div>
+            <div class="post__gallery_item" v-for="(image, index) in project[language.numOfLang].image" :key="index" v-bind:style="{ backgroundImage: 'url(.' + image + ')'}" @click="popupOpen()">
+                <div class="post__gallery_item-popup"></div>
             </div>
         </div>
         <div class="popup-shadow popup-hide" @click="popupClose()"></div>
@@ -50,17 +50,51 @@ import language from "../../settings/language";
         methods: {
             popupOpen: function() {
                 let shadow = document.querySelector(".popup-shadow"),
-                    popupItem = document.createElement("div"),
+                    popupWrapper = document.createElement("div"),
+                    popupItem = document.createElement("img"),
                     arrImg = this.project[language.numOfLang].image,
                     parent = document.getElementsByTagName('body')[0];
 
-                    popupItem.classList.add("popup-center-show");
-                    popupItem.style.backgroundImage = "url(" + arrImg[(this.project[language.numOfLang].id)] + ")";
+                    popupWrapper.classList.add("owl-carousel");
+                    popupWrapper.classList.add("popup-center-show");
 
-                    parent.appendChild(popupItem);
+                for (let img of this.project[language.numOfLang].image) {
+
+                    
+                    
+                }
+                    popupItem.src = arrImg[(this.project[language.numOfLang].id)];
+
+                    parent.appendChild(popupWrapper);
+                    popupWrapper.appendChild(popupItem);
+                    popupWrapper.appendChild(popupItem);
+                    popupWrapper.appendChild(popupItem);
 
                 shadow.classList.remove("popup-hide");
                 shadow.classList.add("popup-show");
+
+                jQuery(document).ready(function(){
+                jQuery('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:0,
+                    nav: true,
+                    dots: false,
+                    slideTransition: "linear",
+                    autoplay: false,
+                    rewind: true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:1
+                        },
+                        1000:{
+                            items:1
+                        }
+                    }
+                });
+            });
 
 
             },
