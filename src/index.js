@@ -28,4 +28,3 @@ let blockFooter = new Vue({
     },
     template: '<downBlock></downBlock>',
 });
-
