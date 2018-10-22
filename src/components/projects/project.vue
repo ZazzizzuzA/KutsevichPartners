@@ -1,7 +1,7 @@
 <template>
     <div class="post">
         <div class="post__project-foto" :style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[0] + ')'}">
-            <span class="post__project-foto_title"><strong>{{project[language.numOfLang].title}}</strong><br> {{project[language.numOfLang].country}}</span>
+            <span class="post__project-foto_title"><strong>{{project[language.numOfLang].title}}</strong><br>{{project[language.numOfLang].country}}</span>
         </div>
         <div class="post__project-info">
             <div class="post__project-info_article">

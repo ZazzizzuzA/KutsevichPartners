@@ -28,3 +28,68 @@ let blockFooter = new Vue({
     },
     template: '<downBlock></downBlock>',
 });
+
+// Smooth scrolling to the top
+
+let toTop = document.getElementById('ScrollTop'),
+    position,
+    timer;
+
+window.onwheel = function() {
+
+    position = window.pageYOffset;
+    if (position >= 600) {
+        toTop.style.opacity = 0.6;
+        toTop.style.cursor = "pointer";
+        toTop.style.display = "block";
+        toTop.onmouseover = () => {
+            toTop.style.opacity = 0.9;
+        }
+        toTop.onmouseleave = () => {
+            toTop.style.opacity = 0.6;
+        }
+    }
+    if (position < 600) {
+        toTop.style.opacity = 0;
+        toTop.style.cursor = "default";
+        
+    }
+};
+window.addEventListener("keyup", keyEnd);
+
+function keyEnd() {
+    if (event.keyCode == 35) {
+        position = window.pageYOffset;
+        toTop.style.opacity = 0.6;
+        toTop.style.cursor = "pointer";
+        
+        toTop.onmouseover = () => {
+            toTop.style.opacity = 0.9;
+        }
+        toTop.onmouseleave = () => {
+            toTop.style.opacity = 0.6;
+        }
+        
+    }
+}
+toTop.onclick = function back() {
+
+    toTop.style.opacity = 0;
+    toTop.style.display = "none";
+    toTop.style.cursor = "default";
+
+    if (position > 0) {
+
+        window.scrollTo(0, position);
+        position = position - 50;
+        timer = setTimeout(back, 10);
+
+
+    } else if (position <= 0) {
+
+        window.scrollTo(0, position);
+        setTimeout( () => toTop.style.display = "none", 1000);
+        clearTimeout(timer);
+
+    }
+}
