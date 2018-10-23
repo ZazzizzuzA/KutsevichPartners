@@ -24,6 +24,7 @@
                 <span class="title">Email:</span><br><span><a :href="'mailto:'+contacts[language.numOfLang].email" target="_blank">{{contacts[language.numOfLang].email}}</a></span>
             </div>
         </div>
+                <div class="scroll-button-to-top" id="ScrollTop"><img src="../../assets/images/icons/arrow-up.png" alt="To-the-top"></div>
     </footer>
 </template>
 <script>

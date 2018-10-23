@@ -39,9 +39,13 @@ window.onwheel = function() {
 
     position = window.pageYOffset;
     if (position >= 600) {
-        toTop.style.opacity = 0.6;
-        toTop.style.cursor = "pointer";
         toTop.style.display = "block";
+        setTimeout( () => {
+            toTop.style.opacity = 0.6;
+            toTop.style.cursor = "pointer";
+        }, 100)
+
+        
         toTop.onmouseover = () => {
             toTop.style.opacity = 0.9;
         }
@@ -52,6 +56,11 @@ window.onwheel = function() {
     if (position < 600) {
         toTop.style.opacity = 0;
         toTop.style.cursor = "default";
+        setTimeout( () => {
+            if (position < 600) {
+                toTop.style.display = "none";
+            }
+        }, 1000);
         
     }
 };
