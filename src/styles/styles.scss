@@ -150,12 +150,12 @@
     display: flex;
     flex-flow: column wrap;
     h1 {
-        margin-bottom: 45px;
+        margin: 30px 0px 70px 0px;
         width: 100%;
         font-size: 70px;
         font-weight: 100;
         text-transform: uppercase;
-        padding: 45px 35px 0px;
+        padding: 45px 0px 0px;
         box-sizing: border-box;
         // text-shadow: 5px 1px 20px #ffffff, 10px 3px 4px #070707a8, 15px 5px 5px #00000067, 20px 8px 6px #00000031, 25px 11px 7px #00000021
     }
@@ -188,6 +188,11 @@
         }
     }
     &__info {
+        display: flex;
+        justify-content: center;
+        h1{
+            padding: 0px 30px;
+        }
         &_content {
             width: 100%;
             box-sizing: border-box;
@@ -201,7 +206,8 @@
                 line-height: 1.35;
                 width: 50%;
                 box-sizing: border-box;
-                padding: 0px 10px;
+                padding: 0px 30px;
+                text-align: justify;
             }
             p:nth-child(2) {
                 padding-right: 15px;
@@ -217,14 +223,18 @@
         padding: 30px 35px;
         box-sizing: border-box;
         align-items: center;
+        h1{
+            width: 85%;
+            padding: 0px 45px;
+        }
+       
         &_content {
             box-sizing: border-box;
-            width: 80%;
-            height: 600px;
+            width: 85%;
             display: flex;
             flex-flow: row nowrap;
             flex: 1 1 50%;
-            margin-bottom: 10px;
+            margin-bottom: 50px;
             padding: 0px 35px;
             &:nth-child(even) {
                 flex-direction: row-reverse;
@@ -239,9 +249,10 @@
                 background-color: #ffffff;
                 flex: 1;
                 box-sizing: border-box;
-                font-size: 16px;
-                padding: 10px 0px 0px 20px;
+                font-size: 22px;
+                padding: 10px 10px 0px 20px;
                 overflow: hidden;
+                text-align: justify;
                 h5 {
                     font-size: 1.3em;
                     margin: 15px 0px;

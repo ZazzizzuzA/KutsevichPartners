@@ -13,9 +13,9 @@
                 </div>
             </div>
         </div>
-        <h1>{{title[language.numOfLang]}}</h1>
+        
         <div class="block-about__team">
-            
+            <h1>{{title[language.numOfLang]}}</h1>
             <div class="block-about__team_content" v-for="(person, index) in persons[language.numOfLang]" :key="index">
                 <div class="block-about__team_content-foto" v-bind:style="{ backgroundImage: 'url(' + person.image + ')'}"></div>
                 <div class="block-about__team_content-desc">
