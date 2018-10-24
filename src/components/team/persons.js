@@ -4,7 +4,7 @@ export default [
             name: "Богдан",
             soname: "Куцевич",
             position: "Главный архитектор проекта",
-            image: "../../../assets/images/team/BOGDAN.jpg",
+            image: "./assets/images/team/BOGDAN.jpg",
             titleToDesc: "Биография",
             description: {
                 first: "Получил образование в Национальной Академии Изобразительных Искусств и архитектуры, Киев, Украина (Диплом Магистра Архитектуры), а также в Welsh School of Architecture, Cardiff University, Кардифф, Великобритания (Диплом Master of Science). Проходил стажировку в Historic American Buildings Survey (США), Riksantikvaren (Норвегия), Mediomundo Arquitectos (Испания). Член Национального Союза Архитекторов Украины. Обладатель квалификационного сертификата архитектора. Работает в области архитектуры, градостроительства и дизайна интерьеров с 2001 года. Работал в проектных организациях в Украине и за рубежом (Великобритания, Азербайджан, Казахстан, ОАЄ, Саудовская Аравия) на должностях от архитектора до главного архитектора компании (Архитектурное бюро А. Комаровского, Seifert Architects, Chapman Taylor, Rumoz). Принимал участие в Украинских и международных архитектурных конкурсах и фестивалях: Campustage, Leonardo, BIMAS, CANactions, Интерьер Года, Ukrainian Urban Awards. В настоящее время является творческим руководителем архитектурной студии «Куцевич + партнеры»."
@@ -14,7 +14,7 @@ export default [
             name: "Наталия",
             soname: "Сапига",
             position: "Менеджер проекта",
-            image: "../../../assets/images/team/NATASHA.jpg",
+            image: "./assets/images/team/NATASHA.jpg",
             titleToDesc: "Биография",
             description: {
                 first: "Получила образование в Национальной Академии Изобразительных Искусств и архитектуры, Киев, Украина (Диплом магистра Архитектуры).",
@@ -30,7 +30,7 @@ export default [
             name: "Иван",
             soname: "Горчаков",
             position: "Архитектор",
-            image: "../../../assets/images/team/IVAN.jpg",
+            image: "./assets/images/team/IVAN.jpg",
             titleToDesc: "Биография",
             description: {
                 first: "Получил образование в Национальной Академии Изобразительных Искусств и архитектуры, Киев, Украина (Диплом специалиста Архитектуры).",
@@ -46,7 +46,7 @@ export default [
             name: "Олег",
             soname: "Адонкин",
             position: "Ведущий Архитектор",
-            image: "../../../assets/images/team/OLEG.jpg",
+            image: "./assets/images/team/OLEG.jpg",
             titleToDesc: "Биография",
             description: {
                 first: "Получил образование в Киевском Национальном Университете  Строительства и Архитектуры, Украина (Диплом Специалиста Архитектуры). Обладатель квалификационного сертификата архитектора.",
@@ -62,7 +62,7 @@ export default [
             name: "Никита",
             soname: "Лычаный",
             position: "Архитектор",
-            image: "../../../assets/images/team/NIKITA.jpg",
+            image: "./assets/images/team/NIKITA.jpg",
             titleToDesc: "Биография",
             description: {
                 first: "Получил образование в Национальном авиационном университете, Киев, Украина (Диплом магистра Архитектуры).",
