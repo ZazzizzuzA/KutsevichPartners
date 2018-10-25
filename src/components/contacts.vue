@@ -33,7 +33,6 @@ export default {
                     adress: "ул. Васильковская, 13, офис 32",
                     phone: [
                         "Телефоны:",
-                        "+38-097-180-2429",
                         "+38-067-409-2365"
                     ],
                     email: "bkutsevych@yahoo.com"

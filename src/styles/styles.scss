@@ -225,7 +225,7 @@
         align-items: center;
         h1{
             width: 85%;
-            padding: 0px 45px;
+            padding: 0px 35px;
         }
        
         &_content {
@@ -240,19 +240,22 @@
                 flex-direction: row-reverse;
             }
             &-foto {
+                min-height: 700px;
                 background-repeat: no-repeat;
-                background-size: contain;
                 background-position: top;
-                flex: 0.6;
+                background-size: cover;
+                flex: 0.8;
+                box-sizing: border-box;
+                margin: 15px;
             }
             &-desc {
                 background-color: #ffffff;
                 flex: 1;
                 box-sizing: border-box;
                 font-size: 22px;
-                padding: 10px 10px 0px 20px;
                 overflow: hidden;
                 text-align: justify;
+                padding-top: 15px;
                 h5 {
                     font-size: 1.3em;
                     margin: 15px 0px;
