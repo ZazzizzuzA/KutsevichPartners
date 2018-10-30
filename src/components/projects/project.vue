@@ -7,22 +7,22 @@
             <div class="post__project-info_article">
                 <div class="post__project-info_article-foto" v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[1] + ')'}"></div>
                 <div class="post__project-info_article-text">
-                    <h3>Название абзаца 1</h3>
-                    <p>{{project[language.numOfLang].description}}</p>
+                    <!-- <h3>Название абзаца 1</h3> -->
+                    <p>{{project[language.numOfLang].description[0]}}</p>
                 </div>
             </div>
             <div class="post__project-info_article">
                 <div class="post__project-info_article-foto" v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[2] + ')'}"></div>
                 <div class="post__project-info_article-text">
-                    <h3>Название абзаца 2</h3>
-                    <p>{{project[language.numOfLang].description}}</p>
+                    <!-- <h3>Название абзаца 2</h3> -->
+                    <p>{{project[language.numOfLang].description[1]}}</p>
                 </div>
             </div>
             <div class="post__project-info_article">
                 <div class="post__project-info_article-foto" v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[3] + ')'}"></div>
                 <div class="post__project-info_article-text">
-                    <h3>Название абзаца 3</h3>
-                    <p>{{project[language.numOfLang].description}}</p>
+                    <!-- <h3>Название абзаца 3</h3> -->
+                    <p>{{project[language.numOfLang].description[2]}}</p>
                 </div>
             </div>
         </div>
