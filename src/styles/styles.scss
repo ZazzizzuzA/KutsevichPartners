@@ -499,27 +499,32 @@
             width: 100%;
             display: flex;
             flex-flow: row nowrap;
-            flex: 1 1 50%;
             margin-bottom: 10px;
+            justify-content: center;
             &:nth-child(even) {
                 flex-direction: row-reverse;
             }
             &-foto {
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: 100%;
                 background-position: center;
-                padding: 10px 10px 0px 30px;
+                margin: 10px 30px 0px 0px;
                 box-sizing: border-box;
                 flex: 1;
-                min-height: 400px;
+                min-height: 450px;
+                max-width: 770px;
+
+            }
+            .ml{
+                margin: 10px 0px 0px 30px;
             }
             &-text {
                 background-color: #ffffff;
                 flex: 1;
                 box-sizing: border-box;
                 font-size: 1.6em;
-                padding: 10px 30px 70px 30px;
                 overflow: hidden;
+                max-width: 770px;
                 h3 {
                     font-size: 1.6em;
                     margin: 15px 0px;
