@@ -44,6 +44,12 @@
             }
 
         }
+        .post{
+            &__project-info {
+                padding: 100px 20px 0px 20px;
+
+            }
+        }
     }
 }
 
@@ -155,12 +161,20 @@
         .post{
             &__project-info {
                 padding: 50px 20px 0px 20px;
-                &_article-text{
-                    font-size: 16px;
-                    padding: 10px 0px 30px 0px;
-                }
-                &_article-foto{
-                    padding: 10px 10px 0px 10px
+                &_article{
+                    padding-top: 15px;
+                
+                    &-text{
+                        font-size: 16px;
+                    }
+                    &-foto{
+                        margin-right: 15px;
+                        background-position: 0px 5px;
+                        min-height: 250px;
+                    }
+                    .ml{
+                        margin-left: 15px;
+                    }
                 }
             }
             &__project-foto{

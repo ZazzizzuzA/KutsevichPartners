@@ -2,15 +2,15 @@
     <div class="block-home">
         <div class="block-home__slider">
             <div class="owl-carousel owl-theme block-home__slider_canvas">
-                <div class="slide" style="background: url(./assets/images/sliders/Image001_1.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+                <div class="slide" style="background: url(./assets/images/sliders/Image001_1.jpg) no-repeat; background-size: cover;">
       
                           
                        <p class="slide__title ta-r">
-                           <span>Good buildings come from good people, and all problems are solved by good design.</span><br> <strong>Stephen Gardiner</strong>
+                           <strong>Good buildings come from good people, and all problems are solved by good design.</strong><br> <span>Stephen Gardiner</span>
                         </p>
 
                 </div>
-                <div class="slide" style="background: url(./assets/images/sliders/Image002_1.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+                <div class="slide" style="background: url(./assets/images/sliders/Image002_1.jpg) no-repeat; background-size: cover;">
       
                           
                        <p class="slide__title">
@@ -18,7 +18,7 @@
                         </p>
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image003_1.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+               <div class="slide" style="background: url(./assets/images/sliders/Image003_1.jpg) no-repeat; background-size: cover;">
       
                           
                        <p class="slide__title text-item_bottom">
@@ -26,27 +26,27 @@
                         </p>
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image004_1.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+               <div class="slide" style="background: url(./assets/images/sliders/Image004_1.jpg) no-repeat; background-size: cover;">
       
                           
                        <p class="slide__title text-item_bottom ta-r">
-                           <span>The difference between good and bad architecture is the time you spend on it. </span><br> <strong>David Chipperfield</strong>
+                           <strong>The difference between good and bad architecture is the time you spend on it. </strong><br> <span>David Chipperfield</span>
                         </p>
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image005_1.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+               <div class="slide" style="background: url(./assets/images/sliders/Image005_1.jpg) no-repeat; background-size: cover;">
       
                           
-                       <p class="slide__title text-item_middle ta-c">
+                       <p class="slide__title ta-r">
                            <strong>I believe that the way people live can be directed a little by architecture.</strong><br><span> Tadao Ando</span> 
                         </p>
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image006_1.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+               <div class="slide" style="background: url(./assets/images/sliders/Image006_1.jpg) no-repeat; background-size: cover;">
       
                           
                        <p class="slide__title">
-                           <span>I don't want to do architecture that's dry and dull. </span><br> <strong>Frank Gehry</strong>
+                           <strong>I don't want to do architecture that's dry and dull. </strong><br> <span>Frank Gehry</span>
                         </p>
 
                 </div>
@@ -57,10 +57,16 @@
                
                 <p>
                     {{about[language.numOfLang].firstRow}}
+                    <br>
+                    <br>
+                    {{about[language.numOfLang].secondRow}}
 
                 </p>
                 <p>
-                    {{about[language.numOfLang].secondRow}}
+                    {{about[language.numOfLang].thirdRow}}
+                    <br>
+                    <br>
+                    {{about[language.numOfLang].fourthRow}}
                 </p>
                 <p class="middle-row">
   
@@ -82,11 +88,15 @@ export default {
             language,
             about: [
                 {
-                    firstRow: "Архитектурная студия «КУЦЕВИЧ + ПАРТНЕРЫ» предлагает услуги в области архитектурного проектирования, дизайна интерьера и ландшафтного дизайна. Наш коллектив обладает большим опытом в области проектирования жилых и общественных зданий. Нами были разработаны проекты частных жилых домов, жилых домов средней этажности, высотных жилых домов, офисных комплексов, гостиничных комплексов, торгово-развлекательных комплексов и др. Нами были спроектированы интерьеры ресторанов, кафе баров, квартир и офисов. ",
+                    firstRow: "Архитектурная бюро «КУЦЕВИЧ + ПАРТНЕРЫ» предлагает услуги в области архитектурного проектирования, дизайна интерьера и ландшафтного дизайна.",
                     
-                    secondRow: "Сотрудники нашей компании прошли стажировку не только в украинских, но и в зарубежных архитектурных компаниях и готовы применить передовые знания в области архитектурного проектирования в проектах любой сложности. Обращаясь в архитектурная студию «КУЦЕВИЧ + ПАРТНЕРЫ», вы будете уверенны, что в результате сотрудничества с нами вы получите уникальный, индивидуальный архитектурный проект. ",
+                    secondRow: "Коллектив бюро обладает большим опытом в области проектирования жилых и общественных зданий в Украине и за рубежом. Компанией были разработаны проекты коттеджей, жилых домов средней этажности и высотного жилья, офисных центров, гостиниц, торгово-развлекательных комплексов и др. Нами были спроектированы интерьеры индивидуальных жилых домов, ресторанов, кафе, квартир и офисов.",
                     
-                    middleRow: "Наши проекты готовы к реализации, выполнены на высоком профессиональном уровне, соответствуют мировым стандартам и украинским строительным нормам, в них применены передовые технологии и с учетом современных трендов в области архитектуры и дизайна."
+                    thirdRow: "Сотрудники бюро прошли стажировку не только в украинских, но и в зарубежных архитектурных компаниях и применяют передовые знания в области архитектурного проектирования в проектах любой сложности.",
+
+                    fourthRow: "Многие проекты компании разрабатываются совместно с ведущими зарубежными архитектурными фирмами, что позволяет добиваться высокого качества проектирования.",
+                    
+                    middleRow: "Обращаясь в архитектурное бюро «КУЦЕВИЧ + ПАРТНЕРЫ», заказчик будет уверен, что в результате сотрудничества с компанией получит уникальный индивидуальный архитектурный проект. Проекты компании готовы к реализации, выполняются на высоком профессиональном уровне, соответствуют мировым стандартам и украинским строительным нормам. В проектах компании используются передовые инженерные технологии, применяются современные тренды в области архитектуры и дизайна.",
                 },
                 {
                     firstRow: "",
@@ -103,7 +113,7 @@ export default {
             jQuery('.owl-carousel').owlCarousel({
                 loop:true,
                 margin:0,
-                nav:false,
+                nav:true,
                 dots: false,
                 slideTransition: "ease-in-out",
                 autoplay: true,

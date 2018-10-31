@@ -2,7 +2,7 @@
     <div class="block-about">
         <div class="block-about__slider">
             <div class="owl-carousel owl-theme block-about__slider_canvas">
-                <div class="slide" style="background: url(./assets/images/sliders/Image001_2.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+                <div class="slide" style="background-image: url(./assets/images/sliders/Image001_2.jpg);background-repeat: no-repeat; background-size: cover;">
       
                           
                        <!-- <p class="slide__title ta-r">
@@ -10,7 +10,7 @@
                         </p> -->
 
                 </div>
-                <div class="slide" style="background: url(./assets/images/sliders/Image002_2.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+                <div class="slide" style="background-image: url(./assets/images/sliders/Image002_2.jpg);background-repeat: no-repeat; background-size: cover;">
       
 <!--                           
                        <p class="slide__title">
@@ -18,7 +18,7 @@
                         </p> -->
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image003_2.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+               <div class="slide" style="background-image: url(./assets/images/sliders/Image003_2.jpg); background-repeat: no-repeat; background-size: cover;">
       
 <!--                           
                        <p class="slide__title text-item_bottom">
@@ -26,7 +26,7 @@
                         </p> -->
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image004_2.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+               <div class="slide" style="background-image: url(./assets/images/sliders/Image004_2.jpg); background-repeat: no-repeat; background-size: cover;">
       
 <!--                           
                        <p class="slide__title text-item_bottom ta-r">
@@ -34,7 +34,7 @@
                         </p> -->
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image005_2.jpg) no-repeat; background-size: cover; background-position: 50% 50%">
+               <div class="slide" style="background-image: url(./assets/images/sliders/Image005_2.jpg); background-repeat: no-repeat; background-size: cover;">
       
                           
                        <!-- <p class="slide__title text-item_middle ta-c">
@@ -50,14 +50,16 @@
                 <h1>{{title[language.numOfLang]}}</h1>
                 <p>
                     {{aboutUs[language.numOfLang].firstRow}}
+                    <br><br>
+                    {{aboutUs[language.numOfLang].secondRow}}
 
                 </p>
                 <p>
-                   {{aboutUs[language.numOfLang].secondRow}}
+                   {{aboutUs[language.numOfLang].thirdRow}}
                 
                     <br>
                     <br>
-                    {{aboutUs[language.numOfLang].middleRow}}
+                    {{aboutUs[language.numOfLang].fourthRow}}
                 </p>
             </div>
         </div>
@@ -75,18 +77,20 @@ export default {
             ],
             aboutUs: [
                 {
-                    firstRow: "Архитектурная студия «КУЦЕВИЧ + ПАРТНЕРЫ» предлагает услуги в области архитектурного проектирования, дизайна интерьера и ландшафтного дизайна. Наш коллектив обладает большим опытом в области проектирования жилых и общественных зданий. Нами были разработаны проекты частных жилых домов, жилых домов средней этажности, высотных жилых домов, офисных комплексов, гостиничных комплексов, торгово-развлекательных комплексов и др. Нами были спроектированы интерьеры ресторанов, кафе баров, квартир и офисов. ",
+                    firstRow: "Архитектурное бюро «КУЦЕВИЧ + ПАРТНЕРЫ»  выполняет все стадии архитектурного проектирования: Предпроектные предложения; Эскизный проект; Дизайн-проект; Стадия «Проект»; Рабочий проект; Рабочая документация и Авторский надзор.",
                     
-                    secondRow: "Сотрудники нашей компании прошли стажировку не только в украинских, но и в зарубежных архитектурных компаниях и готовы применить передовые знания в области архитектурного проектирования в проектах любой сложности. Обращаясь в архитектурная студию «КУЦЕВИЧ + ПАРТНЕРЫ», вы будете уверенны, что в результате сотрудничества с нами вы получите уникальный, индивидуальный архитектурный проект. ",
+                    secondRow: "Сотрудники бюро имеют квалификационные сертификаты на право выполнения работ в сфере архитектуры, а наши партнеры-инженеры обладают квалификационными сертификатами на право выполнения работ в области инженерных коммуникаций и несущих конструкций.",
+
+                    thirdRow: "Команда партнеров-инженеров выполняет инженерные разделы проекта, такие, как: отопление/вентиляция, водопровод/канализация, электроснабжение/электроосвещение и т. д.",
                     
-                    middleRow: "Команда наших партнеров инженеров выполняет инженерные разделы проекта, такие, как: отопление/вентиляция, водопровод/канализация, электроснабжение/электроосвещение и т. д. Результатом нашего сотрудничества с заказчиком является официальный комплексный проект готовый к строительству."
+                    fourthRow: "Результатом нашего сотрудничества с заказчиком является официальный комплексный проект готовый к строительству."
                 },
                 {
                     firstRow: "",
 
                     secondRow: "",
 
-                    middleRow: ""
+                    fourthRow: ""
                 }
             ]
         }

@@ -3,9 +3,9 @@
         <div class="block-about__slider">
             <div class="owl-carousel owl-theme block-about__slider_canvas">
                 <div class="slide" style="background: url(./assets/images/projects/2/006.jpg) no-repeat; background-size: cover; background-position: 50% 80%">
-                       <p class="slide__title">
+                       <!-- <p class="slide__title">
                            <span>Креативный подход</span><br> <strong>со знанием дела</strong>
-                        </p>
+                        </p> -->
                 </div>
                 <div class="slide" style="background: url(./assets/images/projects/1/004.jpg) no-repeat; background-size: cover; background-position: 50% 80%">
                 </div>
@@ -51,7 +51,7 @@ export default {
             jQuery('.owl-carousel').owlCarousel({
                 loop:true,
                 margin:0,
-                nav:false,
+                nav:true,
                 dots: false,
                 slideTransition: "ease-in-out",
                 autoplay: true,

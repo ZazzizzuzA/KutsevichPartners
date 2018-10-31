@@ -13,25 +13,25 @@ import Project from './components/projects/project';
 Vue.use(VueRouter);
 
 let routes = [{
-        path: "/KutsevichPartners/",
+        path: "/KutsevichPartners",
         component: Home
     },
     {
-        path: "/KutsevichPartners/about/",
+        path: "/KutsevichPartners/about",
         name: 'about',
         component: About
     },
     {
-        path: "/KutsevichPartners/projects/",
+        path: "/KutsevichPartners/projects",
         name: 'projects',
         component: Projects
     },
     {
-        path: "/KutsevichPartners/team/",
+        path: "/KutsevichPartners/team",
         component: Team
     },
     {
-        path: "/KutsevichPartners/contacts/",
+        path: "/KutsevichPartners/contacts",
         component: Contacts
     },
     {
@@ -39,12 +39,12 @@ let routes = [{
         component: Lost
     },
     {
-        path: "/KutsevichPartners/projects/:category/",
+        path: "/KutsevichPartners/projects/:category",
         name: 'category',
         component: Category
     },
     {
-        path: "/KutsevichPartners/project/:id/",
+        path: "/KutsevichPartners/project/:id",
         name: 'project',
         component: Project
     }

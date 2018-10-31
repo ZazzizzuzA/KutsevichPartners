@@ -10,7 +10,7 @@
             <span>{{places[language.numOfLang].title[1]}}</span><br>
             <span>{{places[language.numOfLang].title[0]}} <strong>{{places[language.numOfLang].adress}}</strong></span><br>
             <span>Email: <strong>{{places[language.numOfLang].email}}</strong></span><br>
-            <span>{{places[language.numOfLang].phone[0]}} <strong>{{places[language.numOfLang].phone[1]}}, {{places[language.numOfLang].phone[1]}}</strong></span>
+            <span>{{places[language.numOfLang].phone[0]}} <strong>{{places[language.numOfLang].phone[1]}}</strong></span>
         </div>
 
     </div>
@@ -46,7 +46,6 @@ export default {
                     adress: "st. Vasilkovskaya, 13, office 32",
                     phone: [
                         "Call:",
-                        "+38-097-180-2429",
                         "+38-067-409-2365"
                     ],
                     email: "bkutsevych@yahoo.com"

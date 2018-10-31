@@ -3,7 +3,7 @@
         <router-link id="logoKutsevich" class="block-nav__full-head_logotype" to="/KutsevichPartners"><img src="../../assets/images/logo.png" alt="logotype"></router-link>
         <div class="block-nav__full-head_navigation">
             <router-link class="block-nav__full-head_navigation-link" v-bind:class="{ active: isActive }" to="/KutsevichPartners/about"><span>{{titles[language.numOfLang].about}}</span></router-link>
-            <router-link class="block-nav__full-head_navigation-link"  to="/KutsevichPartners/projects" v-bind:class="{ active: isActive }"><span v-on:mouseover='mouseOver()' v-on:mouseleave="showCat = showCat" >{{titles[language.numOfLang].projects}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link"  to="/KutsevichPartners/projects" v-bind:class="{ active: isActive }"><span v-on:mouseover='mouseOver()' >{{titles[language.numOfLang].projects}}</span></router-link>
             <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/team" v-bind:class="{ active: isActive }"><span>{{titles[language.numOfLang].team}}</span></router-link>
             <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/contacts" v-bind:class="{ active: isActive }"><span>{{titles[language.numOfLang].contacts}}</span></router-link>
         </div>
@@ -70,17 +70,21 @@ export default {
         mouseOver: function() {
             this.showCat = false;
             let catOut = document.getElementById("categories");
-            catOut.classList.add("showZIndex");
+  
 
+                setTimeout( () => {
+                    if (catOut.classList.contains("showCategories")) {
+                        this.showCat = true;                            
+                    }
+                }, 5000 )
+        
         },
         mouseLeave: function() {
-
             let catIn = document.getElementById("categories");
-            catIn.classList.remove("showZIndex");
 
-            setTimeout( () => {
-                this.showCat = true;
-            }, 300)
+                setTimeout( () => {
+                    this.showCat = true;
+                }, 300)
         },
         changeLanguage() {
             this.language.english = !this.language.english;
