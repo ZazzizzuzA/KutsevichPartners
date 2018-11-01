@@ -1,12 +1,38 @@
 <template>
     <nav class="block-nav__full-head">
         <router-link id="logoKutsevich" class="block-nav__full-head_logotype" to="/KutsevichPartners"><img src="../../assets/images/logo.png" alt="logotype"></router-link>
-        <div class="block-nav__full-head_navigation">
+        <div class="block-nav__full-head_navigation" v-if="smallScreen === false">
             <router-link class="block-nav__full-head_navigation-link" v-bind:class="{ active: isActive }" to="/KutsevichPartners/about"><span>{{titles[language.numOfLang].about}}</span></router-link>
             <router-link class="block-nav__full-head_navigation-link"  to="/KutsevichPartners/projects" v-bind:class="{ active: isActive }"><span v-on:mouseover='mouseOver()' >{{titles[language.numOfLang].projects}}</span></router-link>
             <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/team" v-bind:class="{ active: isActive }"><span>{{titles[language.numOfLang].team}}</span></router-link>
             <router-link class="block-nav__full-head_navigation-link" to="/KutsevichPartners/contacts" v-bind:class="{ active: isActive }"><span>{{titles[language.numOfLang].contacts}}</span></router-link>
         </div>
+        
+        <div id="smallMenu" class="block-nav__small-head_navigation" v-if="smallScreen === true">
+            <div id="nav-icon" class="nav-icon__menu_close" @click="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <transition name="menu">
+                <div class="block__menu menu_close">
+                    <div>
+                        <router-link class="block-nav__small-head_navigation-link" v-bind:class="{ active: isActive }" to="/KutsevichPartners/about"><span @click="openMenu()">{{titles[language.numOfLang].about}}</span></router-link>
+
+                        <router-link class="block-nav__small-head_navigation-link"  to="/KutsevichPartners/projects" v-bind:class="{ active: isActive }" ><span @click="openMenu()">{{titles[language.numOfLang].projects}}</span></router-link>
+
+                        <router-link class="block-nav__small-head_navigation-link" to="/KutsevichPartners/team" v-bind:class="{ active: isActive }" ><span @click="openMenu()">{{titles[language.numOfLang].team}}</span></router-link>
+
+                        <router-link class="block-nav__small-head_navigation-link" to="/KutsevichPartners/contacts" v-bind:class="{ active: isActive }" ><span @click="openMenu()">{{titles[language.numOfLang].contacts}}</span></router-link>
+
+                    </div>
+                </div>
+            </transition>
+        </div>
+       
         <div class="block-nav__full-head_share" id="iconsShare">
             <a href="https://share.yandex.net/go.xml?service=facebook&url=http%3A%2F%2Fwww.kutsevych.com%2F&title=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%9A%D1%83%D1%86%D0%B5%D0%B2%D0%B8%D1%87%20%2B%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%8B%20-%20%D0%93%D0%9B%D0%90%D0%92%D0%9D%D0%90%D0%AF" class="facebook" target="_blank" title="Facebook">
                 <img src="../../assets/images/icons/facebook.png" alt="fb">
@@ -43,6 +69,7 @@ export default {
         return {
             isActive: true,
             showCat: true, 
+            smallScreen: false,
             language,
             titles: [
                 {
@@ -89,8 +116,32 @@ export default {
         changeLanguage() {
             this.language.english = !this.language.english;
             this.language.english ? this.language.numOfLang = 1 : this.language.numOfLang = 0;
+        },
+        openMenu() {
+
+            let menu = document.getElementsByClassName('block__menu')[0],
+                icon = document.getElementById('nav-icon');
+            icon.classList.toggle('open');
+
+            menu.classList.toggle('menu_opening');
+            menu.classList.toggle('menu_opened');
+
+            if (menu.classList.contains('menu_opened') || menu.classList.contains('menu_opening')) {
+                menu.classList.remove('menu_closing');
+            } else {
+                menu.classList.add('menu_closing');
+
+            }
+            menu.classList.toggle('menu_close');
+
         }
     },
+    mounted: function() {
+        let screenWidth = window.innerWidth;
+        if ( screenWidth < 761) {
+            this.smallScreen = true;
+        }
+    }
 }
 </script>
 <style lang="scss">

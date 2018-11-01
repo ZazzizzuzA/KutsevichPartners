@@ -1,0 +1,190 @@
+
+.nav-icon__menu_close {
+    width: 30px;
+    height: 25px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    transition: all 1s linear;
+    z-index: 99999;
+    span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 50%;
+        background-color: black;
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        // z-index: 20;
+    }
+    span:nth-child(even) {
+        left: 50%;
+        border-radius: 0 9px 9px 0;
+    }
+    span:nth-child(odd) {
+        left: 0px;
+        border-radius: 9px 0 0 9px;
+    }
+    span:nth-child(1),
+    span:nth-child(2) {
+        top: 0px;
+    }
+    span:nth-child(3),
+    span:nth-child(4) {
+        top: 10px;
+    }
+    span:nth-child(5),
+    span:nth-child(6) {
+        top: 20px;
+    }
+}
+
+.open {
+    span:nth-child(1),
+    span:nth-child(6) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    span:nth-child(2),
+    span:nth-child(5) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    span:nth-child(1) {
+        left: 2px;
+        top: 7px;
+    }
+    span:nth-child(2) {
+        left: calc(50% - 5px);
+        top: 7px;
+    }
+    span:nth-child(3) {
+        left: -50%;
+        opacity: 0;
+    }
+    span:nth-child(4) {
+        left: 100%;
+        opacity: 0;
+    }
+    span:nth-child(5) {
+        left: 2px;
+        top: 20px;
+    }
+    span:nth-child(6) {
+        left: calc(50% - 5px);
+        top: 20px;
+    }
+}
+.block-nav__small-head_navigation {
+    align-self: center;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+ 
+    &-link{
+        text-align: center;
+        width: 100%;
+        color:white;
+        text-decoration: none;
+        line-height: 55px;
+        font-size: 1.8em;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: all .4s ease-out;
+        box-sizing: border-box;
+        &:hover{
+            background-color: rgba(250, 250, 250, 0.1);
+        }
+    }
+}
+
+.block__menu {
+    position: fixed;
+    top: 70px;
+    background-color: rgba(0, 0, 0, 0.836);
+    overflow: hidden;
+    text-align: center;
+    div {
+        text-align: left;
+        border-spacing: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+.menu_closing{
+    animation: pushUp 2000ms;
+}
+.menu_close {
+    
+    height: 0px;
+    width: 0px;
+    left: calc(50% - 1px);
+}
+.menu_opening{
+    animation: pullDown 2000ms;
+
+}
+.menu_opened{
+    height: calc(100vh - 40px);
+    width: 100vw;
+    left: 0px;
+}
+@keyframes pullDown {
+    0% {
+        height: 0px;
+        width: 0px;
+        left: calc(50% - 1px);
+    }
+    3%{
+        width: 2px;
+    }
+    50% {
+        height: calc(100vh - 40px);
+        width: 2px;
+        left: calc(50% - 1px);
+    }
+    100% {
+        height: calc(100vh - 40px);
+        width: 100vw;
+        left: 0px;
+    }
+}
+@keyframes pushUp {
+    0% {
+        height: calc(100vh - 40px);
+        width: 100vw;
+        left: 0px;
+    }
+    50% {
+        height: calc(100vh - 40px);
+        width: 2px;
+        left: calc(50% - 1px);
+    }
+    97% {
+        width: 2px;
+    }
+    100% {
+        height: 0px;
+        width: 0px;
+    }
+}

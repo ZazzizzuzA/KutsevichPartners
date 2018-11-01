@@ -196,8 +196,157 @@
 }
 
 @media (max-width: 768px) {
-   
+    .container{
+
+        .block-nav{
+            margin-bottom: 30px;
+            height: 40px;
+            &__full-head{
+                &_logotype{
+                    left: 20px;
+                    img {
+                        width: 150px;
+                    }
+                }
+                &_navigation{
+                    
+                    &-link{
+                        font-size: 14px;
+                        flex: auto;
+                        flex: 1;
+                        span{
+                            line-height: 30px;
+                        }
+                    }
+                }
+                &_categories{
+                    transform: none !important;
+                    bottom: -30px;
+                    height: 30px;
+                    opacity: 1 !important;
+                    .border-line{
+                        max-height: 90%;
+                        width: 2px;
+                    }
+                }
+            }
+        }
+        .block {
+            &__content{
+                &_post{
+                    width: 48%;
+                }
+            }
+        }
+        .block-footer{
+            &__row{
+                padding: 0px 20px;
+                &_adress{
+                    width: 330px;
+                }
+            }
+        }
+        .block-home{
+            &__slider{
+                height: calc(100vh - 70px);
+            }
+            &__info{
+                &_content{
+                    padding: 0px 20px 30px 20px;
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .block-about{
+            h1{
+                margin-bottom: 25px;
+                width: 100%;
+            }
+            &__info{
+
+                &_content{
+                    padding: 0px 20px 30px 20px;
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+            &__team{
+                padding: 10px 20px;
+                &_content{
+                    padding: 0px 0px;
+                    width: auto;
+                    height: auto;
+                    &-desc{
+                        font-size: 14px;
+                        p{
+                            line-height: 1.3em;
+                            letter-spacing: 0px;
+                        }
+                        h5{
+                            font-size: 1.1em;
+                            margin: 5px 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .block-contacts{
+            height: calc(100vh - 265px);
+            &__adress{
+                padding: 0px 0px 0px 15px;
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+        .block-cat {
+            &__item {
+                &:first-child {
+                    // margin-top: 45px;
+                    height: calc(100vh - 115px);
+                }
+            }
+        }
+        .post{
+            &__project-info {
+                padding: 50px 20px 0px 20px;
+                &_article{
+                    padding-top: 15px;
+                
+                    &-text{
+                        font-size: 16px;
+                    }
+                    &-foto{
+                        margin-right: 15px;
+                        background-position: 0px 5px;
+                        min-height: 250px;
+                    }
+                    .ml{
+                        margin-left: 15px;
+                    }
+                }
+            }
+            &__project-foto{
+                height: calc(85vh - 115px);
+                font-size: 40px;
+                &_title{
+                    strong{
+                        font-size: inherit;
+                    }
+                }
+            }
+        }
+
+    }
+    .popup-center-show{
+        height: 60%;
+        width: 80%;
+    }
 }
+
 @media (max-width: 640px) {
     
 }
