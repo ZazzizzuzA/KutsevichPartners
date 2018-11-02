@@ -224,10 +224,17 @@
                     bottom: -30px;
                     height: 30px;
                     opacity: 1 !important;
+                    
                     .border-line{
                         max-height: 90%;
                         width: 2px;
                     }
+                    span{
+                        font-size: 10px;
+                    }
+                }
+                &_share{
+                    right: 15px;
                 }
             }
         }
@@ -240,9 +247,19 @@
         }
         .block-footer{
             &__row{
-                padding: 0px 20px;
+                padding: 0px 10px;
                 &_adress{
-                    width: 330px;
+                    padding: 10px 0px 15px;
+                    font-size: 10px;
+                    width: 275px;
+                    margin-right:0px;
+                }
+                &_follow{
+                    padding: 10px 0px 15px;
+                    img{
+                        width: 12px;
+                        height: 12px;
+                    }
                 }
             }
         }
@@ -252,24 +269,31 @@
             }
             &__info{
                 &_content{
-                    padding: 0px 20px 30px 20px;
+                    margin-top: 15px;
+                    padding: 0px 10px 15px 10px;
                     p{
-                        font-size: 20px;
+                        font-size: 12px;
+                    }
+                    .middle-row{
+                        width: 100%;
+                        font-size: 11px;
                     }
                 }
             }
         }
         .block-about{
             h1{
-                margin-bottom: 25px;
+                margin-bottom: 15px;
                 width: 100%;
+                font-size: 30px;
             }
             &__info{
 
                 &_content{
                     padding: 0px 20px 30px 20px;
+                    margin-bottom: 20px;
                     p{
-                        font-size: 20px;
+                        font-size: 12px;
                     }
                 }
             }
@@ -277,18 +301,28 @@
                 padding: 10px 20px;
                 &_content{
                     padding: 0px 0px;
-                    width: auto;
-                    height: auto;
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
                     &-desc{
-                        font-size: 14px;
+                        font-size: 12px;
+                        margin: auto;
+                        width: 80%;
                         p{
                             line-height: 1.3em;
                             letter-spacing: 0px;
+                            font-size: 13px;
                         }
                         h5{
-                            font-size: 1.1em;
+                            font-size: 0.9em;
                             margin: 5px 0px;
                         }
+                    }
+                    &-foto{
+                        flex: 0.6;
+                        background-size: contain;
+                        min-height: 0px;
+                        height: 450px;
                     }
                 }
             }
