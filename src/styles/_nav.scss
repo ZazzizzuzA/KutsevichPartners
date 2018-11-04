@@ -118,7 +118,7 @@
 .block__menu {
     position: fixed;
     top: 70px;
-    background-color: rgba(0, 0, 0, 0.836);
+    background-color: rgba(0, 0, 0, 0.877);
     overflow: hidden;
     text-align: center;
     div {
@@ -129,10 +129,17 @@
         flex-flow: column wrap;
         align-items: center;
         justify-content: space-around;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 400ms linear;
+        white-space: nowrap;
+    }
+    .op-1{
+        opacity: 1;
     }
 }
 .menu_closing{
-    animation: pushUp 2000ms;
+    animation: pushUp 1500ms;
 }
 .menu_close {
     
@@ -141,7 +148,7 @@
     left: calc(50% - 1px);
 }
 .menu_opening{
-    animation: pullDown 2000ms;
+    animation: pullDown 1500ms;
 
 }
 .menu_opened{

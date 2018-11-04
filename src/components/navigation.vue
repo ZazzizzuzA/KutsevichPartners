@@ -52,9 +52,9 @@
             <div href="" class="language-change" @click="changeLanguage()">{{ language.english ? "EN" : "РУ"}}</div>
         </div>
         <div class="block-nav__full-head_categories" v-bind:class="{showCategories: !showCat}" id="categories" v-on:mouseleave='mouseLeave()'>
-            <router-link class="block-nav__full-head_navigation-link" :to="{ name: 'category', params: { category: 'interior' } }"><span>{{titles[language.numOfLang].interior}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" :to="{ name: 'category', params: { category: 'interior' } }"><span @click="closeOnlyMenu()">{{titles[language.numOfLang].interior}}</span></router-link>
             <div class="border-line"></div>
-            <router-link class="block-nav__full-head_navigation-link" :to="{ name: 'category', params: { category: 'exterior' } }"><span>{{titles[language.numOfLang].exterior}}</span></router-link>
+            <router-link class="block-nav__full-head_navigation-link" :to="{ name: 'category', params: { category: 'exterior' } }" ><span @click="closeOnlyMenu()">{{titles[language.numOfLang].exterior}}</span></router-link>
         </div>
     </nav>
 </template>
@@ -120,11 +120,13 @@ export default {
         openMenu() {
 
             let menu = document.getElementsByClassName('block__menu')[0],
-                icon = document.getElementById('nav-icon');
+                icon = document.getElementById('nav-icon'),
+                childMenu = (menu.childNodes)[0];
             icon.classList.toggle('open');
-
+            
             menu.classList.toggle('menu_opening');
             menu.classList.toggle('menu_opened');
+            childMenu.classList.toggle('op-1');
 
             if (menu.classList.contains('menu_opened') || menu.classList.contains('menu_opening')) {
                 menu.classList.remove('menu_closing');
@@ -133,6 +135,26 @@ export default {
 
             }
             menu.classList.toggle('menu_close');
+
+        },
+        closeOnlyMenu() {
+
+            let menu = document.getElementsByClassName('block__menu')[0],
+                icon = document.getElementById('nav-icon'),
+                childMenu = (menu.childNodes)[0];
+
+            icon.classList.remove('open');
+            menu.classList.remove('menu_opening');
+            menu.classList.remove('menu_opened');
+            childMenu.classList.remove('op-1');
+
+            if (menu.classList.contains('menu_opened') || menu.classList.contains('menu_opening')) {
+                menu.classList.remove('menu_closing');
+            } else {
+                menu.classList.add('menu_closing');
+
+            }
+            menu.classList.add('menu_close');
 
         }
     },

@@ -2,7 +2,7 @@
     <div class="block-home">
         <div class="block-home__slider">
             <div class="owl-carousel owl-theme block-home__slider_canvas">
-                <div class="slide" style="background: url(./assets/images/sliders/Image001_1.jpg) no-repeat; background-size: cover;">
+                <div class="slide" style="background-image: url(./assets/images/sliders/Image001_1.jpg); background-size: cover;">
       
                           
                        <p class="slide__title ta-r">
@@ -10,7 +10,7 @@
                         </p>
 
                 </div>
-                <div class="slide" style="background: url(./assets/images/sliders/Image002_1.jpg) no-repeat; background-size: cover;">
+                <div class="slide" style="background-image: url(./assets/images/sliders/Image002_1.jpg); background-size: cover;">
       
                           
                        <p class="slide__title">
@@ -18,7 +18,7 @@
                         </p>
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image003_1.jpg) no-repeat; background-size: cover;">
+               <div class="slide" style="background-image: url(./assets/images/sliders/Image003_1.jpg); background-size: cover;">
       
                           
                        <p class="slide__title text-item_bottom">
@@ -26,7 +26,7 @@
                         </p>
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image004_1.jpg) no-repeat; background-size: cover;">
+               <div class="slide" style="background-image: url(./assets/images/sliders/Image004_1.jpg); background-size: cover;">
       
                           
                        <p class="slide__title text-item_bottom ta-r">
@@ -34,7 +34,7 @@
                         </p>
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image005_1.jpg) no-repeat; background-size: cover;">
+               <div class="slide" style="background-image: url(./assets/images/sliders/Image005_1.jpg); background-size: cover;">
       
                           
                        <p class="slide__title ta-r">
@@ -42,7 +42,7 @@
                         </p>
 
                 </div>
-               <div class="slide" style="background: url(./assets/images/sliders/Image006_1.jpg) no-repeat; background-size: cover;">
+               <div class="slide" style="background-image: url(./assets/images/sliders/Image006_1.jpg); background-size: cover;">
       
                           
                        <p class="slide__title">

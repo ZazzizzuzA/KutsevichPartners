@@ -189,10 +189,6 @@
         }
 
     }
-    .popup-center-show{
-        height: 60%;
-        width: 80%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -242,6 +238,10 @@
             &__content{
                 &_post{
                     width: 48%;
+                    margin-top: 15px;
+                    &-background{
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -266,6 +266,11 @@
         .block-home{
             &__slider{
                 height: calc(100vh - 70px);
+                &_canvas{
+                    .slide{
+                        background-position: 50% -20%;
+                    }
+                }
             }
             &__info{
                 &_content{
@@ -286,6 +291,14 @@
                 margin-bottom: 15px;
                 width: 100%;
                 font-size: 30px;
+            }
+            &__slider{
+                &_canvas{
+                    .slide{
+                        background-position: 50% -20%;
+                    }
+                }
+
             }
             &__info{
 
@@ -374,10 +387,6 @@
             }
         }
 
-    }
-    .popup-center-show{
-        height: 60%;
-        width: 80%;
     }
 }
 
