@@ -219,14 +219,14 @@
     &__info {
         display: flex;
         justify-content: center;
-        h1{
-            padding: 0px 30px;
+        h1 {
+            padding-top: 0px;
         }
         &_content {
             width: 100%;
             box-sizing: border-box;
             margin-top: 45px;
-            padding: 0px 35px 50px 35px;
+            padding: 0px 65px 50px 65px;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -235,7 +235,6 @@
                 line-height: 1.35;
                 width: 50%;
                 box-sizing: border-box;
-                padding: 0px 30px;
                 text-align: justify;
             }
             .middle-row{
@@ -430,7 +429,7 @@
 .block {
     padding: 0px 35px;
     box-sizing: border-box;
-    min-height: calc(100vh - 115px);
+    min-height: calc(100vh - 215px);
     &__content {
         display: flex;
         flex-flow: row wrap;
@@ -468,7 +467,7 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                padding: 10px 10px 10px 20px;
+                padding: 10px 10px 10px 10px;
                 display: block;
                 width: 100%;
                 background-color: rgba(0, 0, 0, 0.6);
@@ -547,7 +546,7 @@
     &__project-info {
         display: flex;
         flex-flow: column wrap;
-        padding: 150px 10% 60px 10%;
+        padding: 60px 10% 0px 10%;
         box-sizing: border-box;
         align-items: center;
         &_article {
@@ -797,6 +796,12 @@
 
 .scroll-button-to-top:hover {
     animation: rippleRev 800ms cubic-bezier(.34, .20, .83, .45);
+}
+
+.not-found{
+    &__text{
+        font-size: 40px;
+    }
 }
 
 @import "_adaptive";

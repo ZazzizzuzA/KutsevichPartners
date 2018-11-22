@@ -12,7 +12,7 @@
 
                 &_content{
 
-                    padding: 0px 20px 30px 20px;
+                    padding: 0px 50px 30px 50px;
                     p{
                         font-size: 20px;
                     }
@@ -115,7 +115,7 @@
             &__info{
 
                 &_content{
-                    padding: 0px 20px 30px 20px;
+                    padding: 0px 50px 30px 50px;
                     p{
                         font-size: 20px;
                     }
@@ -341,11 +341,12 @@
             }
         }
         .block-contacts{
-            height: calc(100vh - 265px);
+            height: calc(100vh - 195px);
             &__adress{
                 padding: 0px 0px 0px 15px;
                 span{
-                    font-size: 16px;
+                    font-size: 11px;
+                    line-height: 15px;
                 }
             }
         }

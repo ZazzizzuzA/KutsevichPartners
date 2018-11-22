@@ -45,7 +45,6 @@ export default {
         }
     },
     mounted: function() {
-        console.log(persons[language.numOfLang].description)
         // Owl-carousel
         jQuery(document).ready(function(){
             jQuery('.owl-carousel').owlCarousel({

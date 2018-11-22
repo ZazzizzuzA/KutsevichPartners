@@ -3,6 +3,7 @@ const path = require("path"),
     HtmlWebpackPlugin = require("html-webpack-plugin"),
     CopyWebpackPlugin = require('copy-webpack-plugin'),
     autoprefixer = require('autoprefixer'),
+    EncodingPlugin = require('webpack-encoding-plugin');
     VueLoaderPlugin = require('vue-loader/lib/plugin');
     // MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -96,8 +97,12 @@ module.exports = {
             // $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
+        }),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('production')
+        }),
+        new EncodingPlugin({
+            encoding: 'utf8'
         })
-
-
     ]
 }
