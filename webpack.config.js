@@ -20,7 +20,7 @@ module.exports = {
         extensions: [".js", ".json", ".scss", ".css", ".vue"],
         alias: {
             fonts: path.join(__dirname, "assets", "fonts"),
-            'vue$': 'vue/dist/vue.js',
+            'vue$': 'vue/dist/vue.min.js',
             components: path.join(__dirname, "src", "components")
         }
     },
@@ -77,7 +77,7 @@ module.exports = {
         port: 1123,
         historyApiFallback: true
     },
-
+    mode: 'production',
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({ template: "./index.html" }),
@@ -98,11 +98,9 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         }),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('production')
-        }),
         new EncodingPlugin({
             encoding: 'utf8'
         })
-    ]
+    ],
+    
 }

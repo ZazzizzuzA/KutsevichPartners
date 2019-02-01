@@ -17,7 +17,9 @@
         </header>
 
         <div id="app">
-            <router-view></router-view>
+            <transition name="slide-fade">
+                <router-view></router-view>
+            </transition>
             <div id="footer"></div>
         </div>
 

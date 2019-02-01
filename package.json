@@ -4,9 +4,9 @@
   "description": "Architect's site",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development",
-    "http": "webpack-dev-server --mode development"
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development",
+    "http": "webpack-dev-server --mode=development"
   },
   "repository": {
     "type": "git",

@@ -8,10 +8,15 @@ ol {
     font-family: 'GothamProRegular', sans-serif;
 }
 
+.hidden-overflow{
+    overflow: hidden;
+}
+
 // Убирает скролбар боковой
 html {
     -ms-overflow-style: none;
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         width: 0;
     }
 }
@@ -26,6 +31,23 @@ p {
     margin: 0;
 }
 
+.slide-fade-enter-active {
+    transition: all 0.6s 0.6s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .6s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to
+
+/* .slide-fade-leave-active до версии 2.1.8 */
+    {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
 @font-face {
     font-family: 'GothamProBlack';
     src: url('../../assets/fonts/GothamPro/GothaProBla.otf');
@@ -33,6 +55,7 @@ p {
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
 @font-face {
     font-family: 'GothamProBlackItalic';
     src: url('../../assets/fonts/GothamPro/GothaProBlaIta.otf');
@@ -40,6 +63,7 @@ p {
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
 @font-face {
     font-family: 'GothamProBold';
     src: url('../../assets/fonts/GothamPro/GothamPro-Bold.eot');
@@ -51,6 +75,7 @@ p {
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
+
 @font-face {
     font-family: 'GothamProBoldItalic';
     src: url('../../assets/fonts/GothamPro/GothaProBolIta.otf');
@@ -58,6 +83,7 @@ p {
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
+
 @font-face {
     font-family: 'GothamProItalic';
     src: url('../../assets/fonts/GothamPro/GothaProIta.otf');
@@ -65,17 +91,19 @@ p {
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
 @font-face {
     font-family: 'GothamProLight';
     src: url('../../assets/fonts/GothamPro/GothamPro-Light.eot');
     src: url('../../assets/fonts/GothamPro/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/GothamPro/GothamPro-Light.woff') format('woff'),
-    url('../../assets/fonts/GothamPro/GothamPro-Light.ttf') format('truetype'),
-    url('../../assets/fonts/GothamPro/GothaProLig.otf');
+        url('../../assets/fonts/GothamPro/GothamPro-Light.woff') format('woff'),
+        url('../../assets/fonts/GothamPro/GothamPro-Light.ttf') format('truetype'),
+        url('../../assets/fonts/GothamPro/GothaProLig.otf');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
 @font-face {
     font-family: 'GothamProLightItalic';
     src: url('../../assets/fonts/GothamPro/GothaProLigIta.otf');
@@ -83,6 +111,7 @@ p {
     font-weight: 100;
     text-rendering: optimizeLegibility;
 }
+
 @font-face {
     font-family: 'GothamProMedium';
     src: url('../../assets/fonts/GothamPro/GothaProMed.otf');
@@ -90,6 +119,7 @@ p {
     font-weight: 500;
     text-rendering: optimizeLegibility;
 }
+
 @font-face {
     font-family: 'GothamProMediumItalic';
     src: url('../../assets/fonts/GothamPro/GothaProMedIta.otf');
@@ -97,13 +127,14 @@ p {
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
 @font-face {
     font-family: 'GothamProRegular';
     src: url('../../assets/fonts/GothamPro/GothamPro.eot');
     src: url('../../assets/fonts/GothamPro/GothamPro.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/GothamPro/GothamPro.woff') format('woff'),
-    url('../../assets/fonts/GothamPro/GothamPro.ttf') format('truetype'),
-    url('../../assets/fonts/GothamPro/GothaProReg.otf');
+        url('../../assets/fonts/GothamPro/GothamPro.woff') format('woff'),
+        url('../../assets/fonts/GothamPro/GothamPro.ttf') format('truetype'),
+        url('../../assets/fonts/GothamPro/GothaProReg.otf');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -113,6 +144,7 @@ p {
     0% {
         box-shadow: 0 0 0 0px rgba(34, 93, 97, 0.4), 0 0 0 0px rgba(35, 52, 61, 0.4);
     }
+
     100% {
         box-shadow: 0 0 10px 60px rgba(34, 93, 97, 0), 0 0 0 60px rgba(240, 240, 240, 0);
     }
@@ -122,6 +154,7 @@ p {
     0% {
         box-shadow: 0 0 10px 60px rgba(36, 77, 90, 0), 0 0 0 60px rgba(240, 240, 240, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0px rgb(47, 51, 54), 0 0 0 0px rgba(28, 58, 75, 1);
     }
