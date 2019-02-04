@@ -77,7 +77,7 @@ module.exports = {
         port: 1123,
         historyApiFallback: true
     },
-    mode: 'production',
+    // mode: 'production',
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({ template: "./index.html" }),

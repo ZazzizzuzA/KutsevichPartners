@@ -212,12 +212,93 @@ export default [
                 "./assets/images/projects/11/005.jpg",
                 "./assets/images/projects/11/006.jpg",
                 "./assets/images/projects/11/007.jpg",
-                "./assets/images/projects/11/008.jpg"
+                "./assets/images/projects/11/008.jpg",
+                "./assets/images/projects/11/009.jpg"
             ],
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2019,
             stage: "",
             id: 11,
+            type: "interior",
+            description: ""
+        },
+        {
+            title: "Торгово-развлекательный центр",
+            image: [
+                "./assets/images/projects/12/001.jpg",
+                "./assets/images/projects/12/002.jpg",
+                "./assets/images/projects/12/003.jpg",
+                "./assets/images/projects/12/004.jpg",
+                "./assets/images/projects/12/005.jpg"
+            ],
+            country: "Эр-Рияд, Саудовская Аравия",
+            year: 2018,
+            stage: "",
+            id: 12,
+            type: "interior",
+            description: ""
+        },
+        {
+            title: "Квартира в ЖК IQ House",
+            image: [
+                "./assets/images/projects/13/001.jpg",
+                "./assets/images/projects/13/002.jpg",
+                "./assets/images/projects/13/003.jpg",
+                "./assets/images/projects/13/004.jpg",
+                "./assets/images/projects/13/005.jpg",
+                "./assets/images/projects/13/006.jpg",
+                "./assets/images/projects/13/007.jpg",
+                "./assets/images/projects/13/008.jpg",
+                "./assets/images/projects/13/009.jpg",
+                "./assets/images/projects/13/010.jpg",
+                "./assets/images/projects/13/011.jpg",
+                "./assets/images/projects/13/012.jpg",
+                "./assets/images/projects/13/013.jpg",
+                "./assets/images/projects/13/014.jpg",
+                "./assets/images/projects/13/015.jpg",
+                "./assets/images/projects/13/016.jpg",
+                "./assets/images/projects/13/017.jpg"
+            ],
+            country: "Днепр",
+            year: 2017,
+            stage: "",
+            id: 13,
+            type: "interior",
+            description: ""
+        },
+        {
+            title: "Коттедж",
+            image: [
+                "./assets/images/projects/14/001.jpg",
+                "./assets/images/projects/14/002.jpg",
+                "./assets/images/projects/14/003.jpg",
+                "./assets/images/projects/14/004.jpg",
+                "./assets/images/projects/14/005.jpg",
+                "./assets/images/projects/14/006.jpg",
+                "./assets/images/projects/14/007.jpg"
+            ],
+            country: "Днепр",
+            year: 2016,
+            stage: "",
+            id: 14,
+            type: "interior",
+            description: ""
+        },
+        {
+            title: "Квартира в ЖК Счастливый",
+            image: [
+                "./assets/images/projects/15/001.jpg",
+                "./assets/images/projects/15/002.jpg",
+                "./assets/images/projects/15/003.jpg",
+                "./assets/images/projects/15/004.jpg",
+                "./assets/images/projects/15/005.jpg",
+                "./assets/images/projects/15/006.jpg",
+                "./assets/images/projects/15/007.jpg"
+            ],
+            country: "Днепр",
+            year: 2017,
+            stage: "",
+            id: 15,
             type: "interior",
             description: ""
         }
