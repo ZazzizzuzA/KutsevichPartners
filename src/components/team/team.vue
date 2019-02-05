@@ -22,7 +22,6 @@
                     <span class="name">{{person.name}}</span>
                     <strong class="name">{{person.soname}}</strong><br>
                     <span class="position">{{person.position}}</span>
-                    <h5>{{person.titleToDesc}}</h5>
                     <p v-for="(desc, i) in persons[language.numOfLang][index].description" :key="i">{{desc}}<br><br></p>
                 </div>
             </div>

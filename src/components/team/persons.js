@@ -5,7 +5,6 @@ export default [
             soname: "Куцевич",
             position: "Главный архитектор проекта",
             image: "./assets/images/team/BOGDAN.jpg",
-            titleToDesc: "Биография",
             description: {
                 first: "Получил образование в Национальной Академии Изобразительных Искусств и архитектуры, Киев, Украина (Диплом Магистра Архитектуры), а также в Welsh School of Architecture, Cardiff University, Кардифф, Великобритания (Диплом Master of Science). Проходил стажировку в Historic American Buildings Survey (США), Riksantikvaren (Норвегия), Mediomundo Arquitectos (Испания).",
                 second: "Член Национального Союза Архитекторов Украины. Обладатель квалификационного сертификата архитектора. Работает в области архитектуры, градостроительства и дизайна интерьеров с 2001 года.",
@@ -18,7 +17,6 @@ export default [
             soname: "Сапига",
             position: "Менеджер проекта",
             image: "./assets/images/team/NATASHA.jpg",
-            titleToDesc: "Биография",
             description: {
                 first: "Получила образование в Национальной Академии Изобразительных Искусств и архитектуры, Киев, Украина (Диплом магистра Архитектуры).",
 
@@ -30,19 +28,18 @@ export default [
             }
         },
         {
-            name: "Иван",
-            soname: "Горчаков",
-            position: "Архитектор",
-            image: "./assets/images/team/IVAN.jpg",
-            titleToDesc: "Биография",
+            name: "Катерина",
+            soname: "Касьян",
+            position: "Архитектор, дизайнер интерьера",
+            image: "./assets/images/team/KATE_copy.jpg",
             description: {
-                first: "Получил образование в Национальной Академии Изобразительных Искусств и архитектуры, Киев, Украина (Диплом специалиста Архитектуры).",
+                first: "Получила образование в Приднепровской Государственной Академии Строительства и Архитектуры, Днепр, Украина (Диплом Специалиста Архитектуры).",
 
-                second: "Работает в области архитектуры и дизайна интерьеров с 2014 года.",
+                second: "Работает в области архитектуры, градостроительства и дизайна интерьеров с 2010 года.",
 
-                third: "Работал в проектных организациях на должностях архитектора и дизайнера (AVG group, ZIKZAK architects, Yodezeen). Принимал участие в архитектурных конкурсах и фестивалях: CANactions, Интерьер Года, «Новый Ильичевск», Ukrainian Urban Awards.",
+                third: "Работала в международных проектных компаниях и архитектурно-строительных организациях Украины (Архитектурное Ателье Нестерова, Мастерская Н.Филоненко, ПиНиК, Kubus, ASEgroup). Призер архитектурных конкурсов. Принимала участие в Украинских и международных архитектурных конкурсах, воркшопах и фестивалях: Archasm, CANactions, Интерьер Года, Ukrainian Urban Awards, «Дизайн-освіта 2010-2012»ХДАДМ.",
 
-                fourth: "В настоящее время работает архитектором-дизайнером в архитектурной студии «Куцевич + партнеры»."
+                fourth: "В настоящее время работает в архитектурной студии «Куцевич + партнеры»."
             }
         },
         {
@@ -50,7 +47,6 @@ export default [
             soname: "Адонкин",
             position: "Ведущий Архитектор",
             image: "./assets/images/team/OLEG.jpg",
-            titleToDesc: "Биография",
             description: {
                 first: "Получил образование в Киевском Национальном Университете  Строительства и Архитектуры, Украина (Диплом Специалиста Архитектуры). Обладатель квалификационного сертификата архитектора.",
 
@@ -66,7 +62,6 @@ export default [
             soname: "Лычаный",
             position: "Архитектор",
             image: "./assets/images/team/NIKITA.jpg",
-            titleToDesc: "Биография",
             description: {
                 first: "Получил образование в Национальном авиационном университете, Киев, Украина (Диплом магистра Архитектуры).",
 
@@ -86,7 +81,7 @@ export default [
             soname: "Kutsevych",
             position: "Architect",
             image: "",
-            titleToDesc: "Biography",
+
             description: {
                 first: ""
             }
@@ -96,7 +91,7 @@ export default [
             soname: "",
             position: "",
             image: "",
-            titleToDesc: "Biography",
+
             description: {
                 first: ""
             }
@@ -106,7 +101,6 @@ export default [
             soname: "",
             position: "",
             image: "",
-            titleToDesc: "Biography",
             description: {
                 first: ""
             }
@@ -116,7 +110,6 @@ export default [
             soname: "",
             position: "",
             image: "",
-            titleToDesc: "Biography",
             description: {
                 first: ""
             }
@@ -126,7 +119,6 @@ export default [
             soname: "",
             position: "",
             image: "",
-            titleToDesc: "Biography",
             description: {
                 first: ""
             }

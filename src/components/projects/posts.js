@@ -34,7 +34,7 @@ export default [
                 "./assets/images/projects/2/007.jpg",
                 "./assets/images/projects/2/008.jpg"
             ],
-            country: "Джидда, Саудоваская Аравия",
+            country: "Джидда, Саудовская Аравия",
             year: 2018,
             stage: "Концепция",
             id: 2,
@@ -104,7 +104,7 @@ export default [
             description: ""
         },
         {
-            title: "Реконструкция Многофункционального центра",
+            title: "Реконструкция Торгово-развлекательного центра",
             image: [
                 "./assets/images/projects/6/001.jpg",
                 "./assets/images/projects/6/002.jpg",
