@@ -487,6 +487,14 @@
         }
 
     }
+    .popup-center-show{
+        .owl-nav{
+            height: 70%;
+            span{
+                font-size: 80px;
+            }
+        }
+    }
 }
 
 @media (max-width: 640px) {}

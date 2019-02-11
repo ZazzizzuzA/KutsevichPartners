@@ -17,15 +17,13 @@
         </header>
 
         <div id="app">
-            <transition name="slide-fade">
+            <transition name="slide-fade" mode="out-in" appear>
+                    
                 <router-view></router-view>
             </transition>
             <div id="footer"></div>
         </div>
-
     </div>
-
-
 </body>
 
 </html>

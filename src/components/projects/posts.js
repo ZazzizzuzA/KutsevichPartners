@@ -1,7 +1,7 @@
 export default [
     // Русский
     [{
-            title: "Многофункциональный центр",
+            title: "Торгово-развлекательный центр",
             image: [
                 "./assets/images/projects/1/001.jpg",
                 "./assets/images/projects/1/002.jpg",
@@ -259,7 +259,7 @@ export default [
                 "./assets/images/projects/13/016.jpg",
                 "./assets/images/projects/13/017.jpg"
             ],
-            country: "Днепр",
+            country: "Днепр, Украина",
             year: 2017,
             stage: "",
             id: 13,
@@ -277,7 +277,7 @@ export default [
                 "./assets/images/projects/14/006.jpg",
                 "./assets/images/projects/14/007.jpg"
             ],
-            country: "Днепр",
+            country: "Днепр, Украина",
             year: 2016,
             stage: "",
             id: 14,
@@ -295,10 +295,49 @@ export default [
                 "./assets/images/projects/15/006.jpg",
                 "./assets/images/projects/15/007.jpg"
             ],
-            country: "Днепр",
+            country: "Днепр, Украина",
             year: 2017,
             stage: "",
             id: 15,
+            type: "interior",
+            description: ""
+        },
+        {
+            title: "РЕКОНСТРУКЦИЯ ОТДЕЛЕНИЯ БАНКА А-КЛУБ",
+            image: [
+                "./assets/images/projects/16/001.jpg",
+                "./assets/images/projects/16/002.jpg",
+                "./assets/images/projects/16/003.jpg",
+                "./assets/images/projects/16/004.jpg",
+                "./assets/images/projects/16/005.jpg",
+                "./assets/images/projects/16/006.jpg",
+                "./assets/images/projects/16/007.jpg",
+                "./assets/images/projects/16/008.jpg",
+                "./assets/images/projects/16/009.jpg"
+            ],
+            country: "Днепр, Украина",
+            year: 2019,
+            stage: "",
+            id: 16,
+            type: "interior",
+            description: ""
+        },        
+        {
+            title: "КВАРТИРА НА МАНСАРДНОМ ЭТАЖЕ",
+            image: [
+                "./assets/images/projects/17/001.jpg",
+                "./assets/images/projects/17/002.jpg",
+                "./assets/images/projects/17/003.jpg",
+                "./assets/images/projects/17/004.jpg",
+                "./assets/images/projects/17/005.jpg",
+                "./assets/images/projects/17/006.jpg",
+                "./assets/images/projects/17/007.jpg",
+                "./assets/images/projects/17/008.jpg"
+            ],
+            country: "Днепр, Украина",
+            year: 2016,
+            stage: "",
+            id: 17,
             type: "interior",
             description: ""
         }

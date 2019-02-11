@@ -74,11 +74,10 @@ export default {
     popupClose: function() {
       let shadow = document.querySelector(".popup-shadow"),
         item = document.querySelector(".popup-center-show"),
-        body = document.querySelector("body"),
         parent = document.getElementsByTagName("body")[0];
 
       shadow.classList.remove("popup-show");
-      body.classList.remove("hidden-overflow");
+      parent.classList.remove("hidden-overflow");
       parent.removeChild(item);
       shadow.classList.add("popup-hide");
     }
@@ -107,12 +106,11 @@ export default {
               popupItems = [],
               dataInd = item.getAttribute("data-index"),
               firstShowItem = document.createElement("img"),
-              body = document.querySelector("body"),
               parent = document.getElementsByTagName("body")[0];
 
             popupWrapper.classList.add("owl-carousel");
             popupWrapper.classList.add("popup-center-show");
-            body.classList.add("hidden-overflow");
+            parent.classList.add("hidden-overflow");
 
             firstShowItem.src = "." + projectImg[dataInd];
             popupItems[dataInd] = firstShowItem;
