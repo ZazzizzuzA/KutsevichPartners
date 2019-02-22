@@ -14,6 +14,7 @@ Vue.use(VueRouter);
 
 let routes = [{
         path: "/",
+        name: 'home',
         component: Home
     },
     {
@@ -35,10 +36,6 @@ let routes = [{
         component: Contacts
     },
     {
-        path: '*',
-        component: Lost
-    },
-    {
         path: "/projects/:category",
         name: 'category',
         component: Category
@@ -47,9 +44,12 @@ let routes = [{
         path: "/project/:id",
         name: 'project',
         component: Project
+        
+    },
+    {
+        path: '*',
+        redirect: { path: '/',  component: Home}
     }
-
-
 ];
 export default new VueRouter({
     mode: "history",
