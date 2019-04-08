@@ -50,10 +50,10 @@ export default [
         {
             title: "Реконструкция Многофункционального центра",
             image: [
-                "./assets/images/projects/9/001.jpg",
-                "./assets/images/projects/9/002.jpg",
-                "./assets/images/projects/9/003.jpg",
-                "./assets/images/projects/9/004.jpg"
+                "./assets/images/projects/10/001.jpg",
+                "./assets/images/projects/10/002.jpg",
+                "./assets/images/projects/10/003.jpg",
+                "./assets/images/projects/10/004.jpg"
             ],
             country: "Джидда, Саудовская Аравия",
             year: 2018,
@@ -123,44 +123,18 @@ export default [
             description: ""
         },
         {
-            title: "Индивидуальный жилой дом",
-            image: [
-                "./assets/images/projects/4/001.jpg",
-                "./assets/images/projects/4/002.jpg",
-                "./assets/images/projects/4/003.jpg",
-                "./assets/images/projects/4/004.jpg",
-                "./assets/images/projects/4/005.jpg",
-                "./assets/images/projects/4/006.jpg",
-                "./assets/images/projects/4/007.jpg"
-            ],
-            country: "Малая Александровка, Украина",
-            year: 2016,
-            stage: "",
-            id: 7,
-            type: "exterior",
-            description: ""
-        },
-        {
-            title: "Индивидуальный жилой дом",
+            title: "Купольный жилой дом",
             image: [
                 "./assets/images/projects/7/001.jpg",
                 "./assets/images/projects/7/002.jpg",
                 "./assets/images/projects/7/003.jpg",
                 "./assets/images/projects/7/004.jpg",
-                "./assets/images/projects/7/005.jpg",
-                "./assets/images/projects/7/006.jpg",
-                "./assets/images/projects/7/007.jpg",
-                "./assets/images/projects/7/008.jpg",
-                "./assets/images/projects/7/009.jpg",
-                "./assets/images/projects/7/010.jpg",
-                "./assets/images/projects/7/011.jpg",
-                "./assets/images/projects/7/012.jpg",
-                "./assets/images/projects/7/013.jpg"
+                "./assets/images/projects/7/005.jpg"
             ],
-            country: "Большая Александровка, Украина",
-            year: 2012,
+            country: "Малая Ольшанка, Украина",
+            year: 2018,
             stage: "",
-            id: 8,
+            id: 7,
             type: "exterior",
             description: ""
         },
@@ -173,37 +147,59 @@ export default [
                 "./assets/images/projects/8/004.jpg",
                 "./assets/images/projects/8/005.jpg",
                 "./assets/images/projects/8/006.jpg",
-                "./assets/images/projects/8/007.jpg"
+                "./assets/images/projects/8/007.jpg",
+                "./assets/images/projects/8/008.jpg",
+                "./assets/images/projects/8/009.jpg",
+                "./assets/images/projects/8/010.jpg",
+                "./assets/images/projects/8/011.jpg",
+                "./assets/images/projects/8/012.jpg",
+                "./assets/images/projects/8/013.jpg"
             ],
-            country: "Гнедин, Украина",
+            country: "Большая Александровка, Украина",
+            year: 2012,
+            stage: "",
+            id: 8,
+            type: "exterior",
+            description: ""
+        },
+        {
+            title: "Индивидуальный жилой дом",
+            image: [
+                "./assets/images/projects/9/001.jpg",
+                "./assets/images/projects/9/002.jpg",
+                "./assets/images/projects/9/003.jpg",
+                "./assets/images/projects/9/004.jpg",
+                "./assets/images/projects/9/005.jpg",
+                "./assets/images/projects/9/006.jpg",
+                "./assets/images/projects/9/007.jpg"
+            ],
+            country: "Малая Александровка, Украина",
             year: 2016,
             stage: "",
             id: 9,
             type: "exterior",
             description: ""
         },
-
         {
             title: "Индивидуальный жилой дом",
             image: [
-                "./assets/images/projects/10/001.jpg",
-                "./assets/images/projects/10/002.jpg",
-                "./assets/images/projects/10/003.jpg",
-                "./assets/images/projects/10/004.jpg",
-                "./assets/images/projects/10/005.jpg",
-                "./assets/images/projects/10/006.jpg",
-                "./assets/images/projects/10/007.jpg",
-                "./assets/images/projects/10/008.jpg"
+                "./assets/images/projects/4/001.jpg",
+                "./assets/images/projects/4/002.jpg",
+                "./assets/images/projects/4/003.jpg",
+                "./assets/images/projects/4/004.jpg",
+                "./assets/images/projects/4/005.jpg",
+                "./assets/images/projects/4/006.jpg",
+                "./assets/images/projects/4/007.jpg"
             ],
-            country: "Копачив, Украина",
-            year: 2015,
+            country: "Гнедин, Украина",
+            year: 2016,
             stage: "",
             id: 10,
             type: "exterior",
             description: ""
         },
         {
-            title: "Вилла",
+            title: "Индивидуальный жилой дом",
             image: [
                 "./assets/images/projects/11/001.jpg",
                 "./assets/images/projects/11/002.jpg",
@@ -212,34 +208,36 @@ export default [
                 "./assets/images/projects/11/005.jpg",
                 "./assets/images/projects/11/006.jpg",
                 "./assets/images/projects/11/007.jpg",
-                "./assets/images/projects/11/008.jpg",
-                "./assets/images/projects/11/009.jpg"
+                "./assets/images/projects/11/008.jpg"
             ],
-            country: "Эр-Рияд, Саудовская Аравия",
-            year: 2019,
+            country: "Копачив, Украина",
+            year: 2015,
             stage: "",
             id: 11,
-            type: "interior",
+            type: "exterior",
             description: ""
         },
         {
-            title: "Торгово-развлекательный центр",
+            title: "Индивидуальный жилой дом",
             image: [
                 "./assets/images/projects/12/001.jpg",
                 "./assets/images/projects/12/002.jpg",
                 "./assets/images/projects/12/003.jpg",
                 "./assets/images/projects/12/004.jpg",
-                "./assets/images/projects/12/005.jpg"
+                "./assets/images/projects/12/005.jpg",
+                "./assets/images/projects/12/006.jpg",
+                "./assets/images/projects/12/007.jpg",
+                "./assets/images/projects/12/008.jpg"
             ],
-            country: "Эр-Рияд, Саудовская Аравия",
-            year: 2018,
+            country: "Путровка, Украина",
+            year: 2015,
             stage: "",
             id: 12,
-            type: "interior",
+            type: "exterior",
             description: ""
         },
         {
-            title: "Квартира в ЖК IQ House",
+            title: "Вилла",
             image: [
                 "./assets/images/projects/13/001.jpg",
                 "./assets/images/projects/13/002.jpg",
@@ -249,51 +247,51 @@ export default [
                 "./assets/images/projects/13/006.jpg",
                 "./assets/images/projects/13/007.jpg",
                 "./assets/images/projects/13/008.jpg",
-                "./assets/images/projects/13/009.jpg",
-                "./assets/images/projects/13/010.jpg",
-                "./assets/images/projects/13/011.jpg",
-                "./assets/images/projects/13/012.jpg",
-                "./assets/images/projects/13/013.jpg",
-                "./assets/images/projects/13/014.jpg",
-                "./assets/images/projects/13/015.jpg",
-                "./assets/images/projects/13/016.jpg",
-                "./assets/images/projects/13/017.jpg"
+                "./assets/images/projects/13/009.jpg"
             ],
-            country: "Днепр, Украина",
-            year: 2017,
+            country: "Эр-Рияд, Саудовская Аравия",
+            year: 2019,
             stage: "",
             id: 13,
             type: "interior",
             description: ""
         },
         {
-            title: "Коттедж",
+            title: "Торгово-развлекательный центр",
             image: [
                 "./assets/images/projects/14/001.jpg",
                 "./assets/images/projects/14/002.jpg",
                 "./assets/images/projects/14/003.jpg",
                 "./assets/images/projects/14/004.jpg",
-                "./assets/images/projects/14/005.jpg",
-                "./assets/images/projects/14/006.jpg",
-                "./assets/images/projects/14/007.jpg"
+                "./assets/images/projects/14/005.jpg"
             ],
-            country: "Днепр, Украина",
-            year: 2016,
+            country: "Эр-Рияд, Саудовская Аравия",
+            year: 2018,
             stage: "",
             id: 14,
             type: "interior",
             description: ""
         },
         {
-            title: "Квартира в ЖК Счастливый",
+            title: "Квартира в ЖК IQ House",
             image: [
-                "./assets/images/projects/15/001.jpg",
                 "./assets/images/projects/15/002.jpg",
+                "./assets/images/projects/15/001.jpg",
                 "./assets/images/projects/15/003.jpg",
                 "./assets/images/projects/15/004.jpg",
                 "./assets/images/projects/15/005.jpg",
                 "./assets/images/projects/15/006.jpg",
-                "./assets/images/projects/15/007.jpg"
+                "./assets/images/projects/15/007.jpg",
+                "./assets/images/projects/15/008.jpg",
+                "./assets/images/projects/15/009.jpg",
+                "./assets/images/projects/15/010.jpg",
+                "./assets/images/projects/15/011.jpg",
+                "./assets/images/projects/15/012.jpg",
+                "./assets/images/projects/15/013.jpg",
+                "./assets/images/projects/15/014.jpg",
+                "./assets/images/projects/15/015.jpg",
+                "./assets/images/projects/15/016.jpg",
+                "./assets/images/projects/15/017.jpg"
             ],
             country: "Днепр, Украина",
             year: 2017,
@@ -303,7 +301,7 @@ export default [
             description: ""
         },
         {
-            title: "РЕКОНСТРУКЦИЯ ОТДЕЛЕНИЯ БАНКА А-КЛУБ",
+            title: "Коттедж",
             image: [
                 "./assets/images/projects/16/001.jpg",
                 "./assets/images/projects/16/002.jpg",
@@ -311,19 +309,17 @@ export default [
                 "./assets/images/projects/16/004.jpg",
                 "./assets/images/projects/16/005.jpg",
                 "./assets/images/projects/16/006.jpg",
-                "./assets/images/projects/16/007.jpg",
-                "./assets/images/projects/16/008.jpg",
-                "./assets/images/projects/16/009.jpg"
+                "./assets/images/projects/16/007.jpg"
             ],
             country: "Днепр, Украина",
-            year: 2019,
+            year: 2016,
             stage: "",
             id: 16,
             type: "interior",
             description: ""
-        },        
+        },
         {
-            title: "КВАРТИРА НА МАНСАРДНОМ ЭТАЖЕ",
+            title: "Квартира в ЖК Счастливый",
             image: [
                 "./assets/images/projects/17/001.jpg",
                 "./assets/images/projects/17/002.jpg",
@@ -331,13 +327,51 @@ export default [
                 "./assets/images/projects/17/004.jpg",
                 "./assets/images/projects/17/005.jpg",
                 "./assets/images/projects/17/006.jpg",
-                "./assets/images/projects/17/007.jpg",
-                "./assets/images/projects/17/008.jpg"
+                "./assets/images/projects/17/007.jpg"
+            ],
+            country: "Днепр, Украина",
+            year: 2017,
+            stage: "",
+            id: 17,
+            type: "interior",
+            description: ""
+        },
+        {
+            title: "РЕКОНСТРУКЦИЯ ОТДЕЛЕНИЯ БАНКА А-КЛУБ",
+            image: [
+                "./assets/images/projects/18/001.jpg",
+                "./assets/images/projects/18/002.jpg",
+                "./assets/images/projects/18/003.jpg",
+                "./assets/images/projects/18/004.jpg",
+                "./assets/images/projects/18/005.jpg",
+                "./assets/images/projects/18/006.jpg",
+                "./assets/images/projects/18/007.jpg",
+                "./assets/images/projects/18/008.jpg",
+                "./assets/images/projects/18/009.jpg"
+            ],
+            country: "Днепр, Украина",
+            year: 2019,
+            stage: "",
+            id: 18,
+            type: "interior",
+            description: ""
+        },        
+        {
+            title: "КВАРТИРА НА МАНСАРДНОМ ЭТАЖЕ",
+            image: [
+                "./assets/images/projects/19/001.jpg",
+                "./assets/images/projects/19/002.jpg",
+                "./assets/images/projects/19/003.jpg",
+                "./assets/images/projects/19/004.jpg",
+                "./assets/images/projects/19/005.jpg",
+                "./assets/images/projects/19/006.jpg",
+                "./assets/images/projects/19/007.jpg",
+                "./assets/images/projects/19/008.jpg"
             ],
             country: "Днепр, Украина",
             year: 2016,
             stage: "",
-            id: 17,
+            id: 19,
             type: "interior",
             description: ""
         }

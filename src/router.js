@@ -13,7 +13,7 @@ import Project from './components/projects/project';
 Vue.use(VueRouter);
 
 let routes = [{
-        path: "/",
+        path: "",
         name: 'home',
         component: Home
     },
@@ -23,16 +23,16 @@ let routes = [{
         component: About
     },
     {
-        path: "/projects",
+        path: "/projects/",
         name: 'projects',
         component: Projects
     },
     {
-        path: "/team",
+        path: "/team/",
         component: Team
     },
     {
-        path: "/contacts",
+        path: "/contacts/",
         component: Contacts
     },
     {
@@ -44,11 +44,10 @@ let routes = [{
         path: "/project/:id",
         name: 'project',
         component: Project
-        
     },
     {
         path: '*',
-        redirect: { path: '/',  component: Home}
+        redirect: '/'
     }
 ];
 export default new VueRouter({

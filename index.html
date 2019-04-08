@@ -18,12 +18,19 @@
 
         <div id="app">
             <transition name="slide-fade" mode="out-in" appear>
-                    
+
                 <router-view></router-view>
             </transition>
             <div id="footer"></div>
         </div>
     </div>
+    <script>
+        let checkPathname = window.location.pathname.replace(/\//g, '');
+
+        if (window.location.pathname.match(/\//g).length > 1) {
+            window.location.pathname = checkPathname;
+        }
+    </script>
 </body>
 
 </html>

@@ -132,6 +132,5 @@ toTop.onclick = function back() {
         window.scrollTo(0, position);
         setTimeout( () => toTop.style.display = "none", 1000);
         clearTimeout(timer);
-
     }
 }

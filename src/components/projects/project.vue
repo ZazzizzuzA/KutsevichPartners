@@ -59,6 +59,7 @@
 <script>
 import posts from "./posts";
 import language from "../../settings/language";
+import router from "../../router.js";
 
 export default {
   data() {
@@ -84,7 +85,6 @@ export default {
   },
   created: function() {
     let projectId = this.$route.params.id;
-
     for (let arr of this.posts) {
       this.project.push(arr[projectId]);
     }
@@ -215,6 +215,9 @@ export default {
     };
 
 
+  },
+  beforeDestroy: function() {
+    this.popupClose();
   }
 };
 </script>
