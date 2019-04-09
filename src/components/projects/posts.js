@@ -153,12 +153,33 @@ export default [
                 "./assets/images/projects/8/010.jpg",
                 "./assets/images/projects/8/011.jpg",
                 "./assets/images/projects/8/012.jpg",
-                "./assets/images/projects/8/013.jpg"
+                "./assets/images/projects/8/013.jpg",
+                "./assets/images/projects/8/014.jpg"
             ],
             country: "Большая Александровка, Украина",
             year: 2012,
             stage: "",
             id: 8,
+            type: "exterior",
+            description: ""
+        },
+        {
+            title: "Индивидуальный жилой дом",
+            image: [
+                "./assets/images/projects/4/001.jpg",
+                "./assets/images/projects/4/002.jpg",
+                "./assets/images/projects/4/003.jpg",
+                "./assets/images/projects/4/004.jpg",
+                "./assets/images/projects/4/005.jpg",
+                "./assets/images/projects/4/006.jpg",
+                "./assets/images/projects/4/007.jpg",
+                "./assets/images/projects/4/008.jpg",
+                "./assets/images/projects/4/009.jpg"
+            ],
+            country: "Малая Александровка, Украина",
+            year: 2016,
+            stage: "",
+            id: 9,
             type: "exterior",
             description: ""
         },
@@ -172,24 +193,6 @@ export default [
                 "./assets/images/projects/9/005.jpg",
                 "./assets/images/projects/9/006.jpg",
                 "./assets/images/projects/9/007.jpg"
-            ],
-            country: "Малая Александровка, Украина",
-            year: 2016,
-            stage: "",
-            id: 9,
-            type: "exterior",
-            description: ""
-        },
-        {
-            title: "Индивидуальный жилой дом",
-            image: [
-                "./assets/images/projects/4/001.jpg",
-                "./assets/images/projects/4/002.jpg",
-                "./assets/images/projects/4/003.jpg",
-                "./assets/images/projects/4/004.jpg",
-                "./assets/images/projects/4/005.jpg",
-                "./assets/images/projects/4/006.jpg",
-                "./assets/images/projects/4/007.jpg"
             ],
             country: "Гнедин, Украина",
             year: 2016,
