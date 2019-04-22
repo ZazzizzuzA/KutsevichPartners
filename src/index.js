@@ -3,14 +3,14 @@ import Vue from "vue";
 import router from "./router";
 import navigation from "./components/navigation";
 import downBlock from "./components/footer";
-import VueFire from 'vuefire';
-import { initializeApp, firebase } from 'firebase';
-import environment from './environment/environment';
+// import VueFire from 'vuefire';
+// import { initializeApp, firebase } from 'firebase';
+// import environment from './environment/environment';
 import 'owl.carousel';
 
 // Настройки Vue-компонентов
 
-Vue.use(VueFire);
+// Vue.use(VueFire);
 
 // получение данных с базы данных firebase
 

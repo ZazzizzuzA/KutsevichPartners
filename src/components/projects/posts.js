@@ -130,8 +130,7 @@ export default [
                 "./assets/images/projects/7/003.jpg",
                 "./assets/images/projects/7/004.jpg",
                 "./assets/images/projects/7/005.jpg",
-                "./assets/images/projects/7/006.jpg",
-                "./assets/images/projects/7/007.jpg"
+                "./assets/images/projects/7/006.jpg"
             ],
             country: "Малая Ольшанка, Украина",
             year: 2018,
@@ -194,7 +193,9 @@ export default [
                 "./assets/images/projects/9/004.jpg",
                 "./assets/images/projects/9/005.jpg",
                 "./assets/images/projects/9/006.jpg",
-                "./assets/images/projects/9/007.jpg"
+                "./assets/images/projects/9/007.jpg",
+                "./assets/images/projects/9/008.jpg",
+                "./assets/images/projects/9/009.jpg"
             ],
             country: "Гнедин, Украина",
             year: 2016,
@@ -213,7 +214,9 @@ export default [
                 "./assets/images/projects/11/005.jpg",
                 "./assets/images/projects/11/006.jpg",
                 "./assets/images/projects/11/007.jpg",
-                "./assets/images/projects/11/008.jpg"
+                "./assets/images/projects/11/008.jpg",
+                "./assets/images/projects/11/009.jpg",
+                "./assets/images/projects/11/010.jpg"
             ],
             country: "Копачив, Украина",
             year: 2015,
@@ -230,9 +233,7 @@ export default [
                 "./assets/images/projects/12/003.jpg",
                 "./assets/images/projects/12/004.jpg",
                 "./assets/images/projects/12/005.jpg",
-                "./assets/images/projects/12/006.jpg",
-                "./assets/images/projects/12/007.jpg",
-                "./assets/images/projects/12/008.jpg"
+                "./assets/images/projects/12/006.jpg"
             ],
             country: "Путровка, Украина",
             year: 2015,

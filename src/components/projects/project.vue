@@ -14,7 +14,7 @@
       <div class="post__project-info_article">
         <div
           class="post__project-info_article-foto"
-          v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[1] + ')'}"
+          v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[0] + ')'}"
         ></div>
         <div class="post__project-info_article-text">
           <!-- <h3>Название абзаца 1</h3> -->
@@ -24,7 +24,7 @@
       <div class="post__project-info_article">
         <div
           class="post__project-info_article-foto ml"
-          v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[2] + ')'}"
+          v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[1] + ')'}"
         ></div>
         <div class="post__project-info_article-text">
           <!-- <h3>Название абзаца 2</h3> -->
@@ -34,7 +34,7 @@
       <div class="post__project-info_article">
         <div
           class="post__project-info_article-foto"
-          v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[3] + ')'}"
+          v-bind:style="{ backgroundImage: 'url(.' + project[language.numOfLang].image[2] + ')'}"
         ></div>
         <div class="post__project-info_article-text">
           <!-- <h3>Название абзаца 3</h3> -->
@@ -79,7 +79,7 @@ export default {
 
       shadow.classList.remove("popup-show");
       parent.classList.remove("hidden-overflow");
-      parent.removeChild(item);
+      if (item !== undefined) parent.removeChild(item);
       shadow.classList.add("popup-hide");
     }
   },
