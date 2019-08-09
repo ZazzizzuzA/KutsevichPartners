@@ -12,6 +12,7 @@ export default [
             year: 2017,
             stage: "Концепция",
             id: 1,
+            typeId: 1,
             type: "exterior",
             description: [
                 
@@ -38,6 +39,7 @@ export default [
             year: 2018,
             stage: "Концепция",
             id: 2,
+            typeId: 2,
             type: "exterior",
             description: [
                 "Концепция данного многофункционального центра предусматривает создание традиционного ТРЦ с круговой крытой галереей, но дополненной дублирующей ее открытой торговой галереей, где будет расположена street retail. В состав многофункционального центра также входит здание многоэтажной гостиницы и подземный паркинг. Общая площадь комплекса 210 000 м2.",
@@ -59,6 +61,7 @@ export default [
             year: 2018,
             stage: "Проект",
             id: 3,
+            typeId: 3,
             type: "exterior",
             description: ""
         },
@@ -74,7 +77,8 @@ export default [
             country: "Марибор, Словения",
             year: 2018,
             stage: "Стадия проект",
-            id: 4,
+            id: 6,
+            typeId: 7,
             type: "exterior",
             description: [
                 
@@ -100,7 +104,29 @@ export default [
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2018,
             stage: "Проект",
+            id: 4,
+            typeId: 4,
+            type: "exterior",
+            description: ""
+        },
+        {
+            title: "Реконструкция торгово-развлекательного центра",
+            image: [
+                "./assets/images/projects/16/001.jpg",
+                "./assets/images/projects/16/002.jpg",
+                "./assets/images/projects/16/003.jpg",
+                "./assets/images/projects/16/004.jpg",
+                "./assets/images/projects/16/005.jpg",
+                "./assets/images/projects/16/006.jpg",
+                "./assets/images/projects/16/007.jpg",
+                "./assets/images/projects/16/008.jpg",
+                "./assets/images/projects/16/009.jpg"
+            ],
+            country: "Джидда, Саудовская Аравия",
+            year: 2019,
+            stage: "",
             id: 5,
+            typeId: 5,
             type: "exterior",
             description: ""
         },
@@ -117,7 +143,8 @@ export default [
             country: "Малая Ольшанка, Украина",
             year: 2018,
             stage: "",
-            id: 6,
+            id: 7,
+            typeId: 6,
             type: "exterior",
             description: ""
         },
@@ -142,7 +169,8 @@ export default [
             country: "Большая Александровка, Украина",
             year: 2012,
             stage: "",
-            id: 7,
+            id: 8,
+            typeId: 12,
             type: "exterior",
             description: ""
         },
@@ -162,7 +190,8 @@ export default [
             country: "Малая Александровка, Украина",
             year: 2016,
             stage: "",
-            id: 8,
+            id: 9,
+            typeId: 11,
             type: "exterior",
             description: ""
         },
@@ -182,7 +211,8 @@ export default [
             country: "Гнедин, Украина",
             year: 2016,
             stage: "",
-            id: 9,
+            id: 10,
+            typeId: 10,
             type: "exterior",
             description: ""
         },
@@ -203,7 +233,8 @@ export default [
             country: "Копачив, Украина",
             year: 2015,
             stage: "",
-            id: 10,
+            id: 11,
+            typeId: 9,
             type: "exterior",
             description: ""
         },
@@ -220,7 +251,8 @@ export default [
             country: "Путровка, Украина",
             year: 2015,
             stage: "",
-            id: 11,
+            id: 12,
+            typeId: 8,
             type: "exterior",
             description: ""
         },
@@ -240,7 +272,8 @@ export default [
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2019,
             stage: "",
-            id: 12,
+            id: 13,
+            typeId: 3,
             type: "interior",
             description: ""
         },
@@ -256,40 +289,28 @@ export default [
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2018,
             stage: "",
-            id: 13,
-            type: "interior",
-            description: ""
-        },
-        {
-            title: "Квартира в ЖК IQ House",
-            image: [
-                "./assets/images/projects/14/002.jpg",
-                "./assets/images/projects/14/001.jpg",
-                "./assets/images/projects/14/003.jpg",
-                "./assets/images/projects/14/004.jpg",
-                "./assets/images/projects/14/005.jpg",
-                "./assets/images/projects/14/006.jpg",
-                "./assets/images/projects/14/007.jpg",
-                "./assets/images/projects/14/008.jpg",
-                "./assets/images/projects/14/009.jpg",
-                "./assets/images/projects/14/010.jpg",
-                "./assets/images/projects/14/011.jpg",
-                "./assets/images/projects/14/012.jpg",
-                "./assets/images/projects/14/013.jpg",
-                "./assets/images/projects/14/014.jpg",
-                "./assets/images/projects/14/015.jpg",
-                "./assets/images/projects/14/016.jpg",
-                "./assets/images/projects/14/017.jpg"
-            ],
-            country: "Днепр, Украина",
-            year: 2017,
-            stage: "",
             id: 14,
+            typeId: 1,
             type: "interior",
             description: ""
         },
         {
-            title: "Коттедж",
+            title: "Многофункциональный центр",
+            image: [
+                "./assets/images/projects/14/001.jpg",
+                "./assets/images/projects/14/002.jpg",
+                "./assets/images/projects/14/003.jpg"
+            ],
+            country: "Джидда, Саудовская Аравия",
+            year: 2018,
+            stage: "Реализован",
+            id: 15,
+            typeId: 2,
+            type: "interior",
+            description: ""
+        },
+        {
+            title: "Бильярдный клуб \"Буффало\"",
             image: [
                 "./assets/images/projects/15/001.jpg",
                 "./assets/images/projects/15/002.jpg",
@@ -299,85 +320,11 @@ export default [
                 "./assets/images/projects/15/006.jpg",
                 "./assets/images/projects/15/007.jpg"
             ],
-            country: "Днепр, Украина",
-            year: 2016,
-            stage: "",
-            id: 15,
-            type: "interior",
-            description: ""
-        },
-        {
-            title: "Квартира в ЖК Счастливый",
-            image: [
-                "./assets/images/projects/16/001.jpg",
-                "./assets/images/projects/16/002.jpg",
-                "./assets/images/projects/16/003.jpg",
-                "./assets/images/projects/16/004.jpg",
-                "./assets/images/projects/16/005.jpg",
-                "./assets/images/projects/16/006.jpg",
-                "./assets/images/projects/16/007.jpg"
-            ],
-            country: "Днепр, Украина",
-            year: 2017,
-            stage: "",
-            id: 16,
-            type: "interior",
-            description: ""
-        },
-        {
-            title: "РЕКОНСТРУКЦИЯ ОТДЕЛЕНИЯ БАНКА А-КЛУБ",
-            image: [
-                "./assets/images/projects/17/001.jpg",
-                "./assets/images/projects/17/002.jpg",
-                "./assets/images/projects/17/003.jpg",
-                "./assets/images/projects/17/004.jpg",
-                "./assets/images/projects/17/005.jpg",
-                "./assets/images/projects/17/006.jpg",
-                "./assets/images/projects/17/007.jpg",
-                "./assets/images/projects/17/008.jpg",
-                "./assets/images/projects/17/009.jpg"
-            ],
-            country: "Днепр, Украина",
-            year: 2019,
-            stage: "",
-            id: 17,
-            type: "interior",
-            description: ""
-        },        
-        {
-            title: "КВАРТИРА НА МАНСАРДНОМ ЭТАЖЕ",
-            image: [
-                "./assets/images/projects/18/001.jpg",
-                "./assets/images/projects/18/002.jpg",
-                "./assets/images/projects/18/003.jpg",
-                "./assets/images/projects/18/004.jpg",
-                "./assets/images/projects/18/005.jpg",
-                "./assets/images/projects/18/006.jpg",
-                "./assets/images/projects/18/007.jpg",
-                "./assets/images/projects/18/008.jpg"
-            ],
-            country: "Днепр, Украина",
-            year: 2016,
-            stage: "",
-            id: 18,
-            type: "interior",
-            description: ""
-        },
-        {
-            title: "Бильярдный клуб \"Буффало\"",
-            image: [
-                "./assets/images/projects/19/001.jpg",
-                "./assets/images/projects/19/002.jpg",
-                "./assets/images/projects/19/003.jpg",
-                "./assets/images/projects/19/004.jpg",
-                "./assets/images/projects/19/005.jpg",
-                "./assets/images/projects/19/006.jpg",
-                "./assets/images/projects/19/007.jpg"
-            ],
             country: "Киев, Украина",
             year: 2012,
             stage: "Реализован",
-            id: 19,
+            id: 16,
+            typeId: 4,
             type: "interior",
             description: ""
         }
@@ -396,6 +343,7 @@ export default [
             year: 2017,
             stage: "Concept Design",
             id: 1,
+            typeId: 3,
             type: "exterior",
             description: ""
         },
@@ -415,6 +363,7 @@ export default [
             year: 2018,
             stage: "Concept Design",
             id: 2,
+            typeId: 3,
             type: "exterior",
             description: ""
         },
