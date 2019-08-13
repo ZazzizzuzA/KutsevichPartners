@@ -1,7 +1,7 @@
 <template>
     <div class="block">
         <div class="block__content">
-            <router-link class="block__content_post" v-for="(post, index) in even(posts[language.numOfLang])" :key="post.id" v-if="post.type == $route.params.category" :style="{ backgroundImage: 'url(.' + post.image[0] + ')' }" :to="{ name: 'project', params: { id: index } }">
+            <router-link class="block__content_post" v-for="post in even(posts[language.numOfLang])" :key="post.id" v-if="post.type == $route.params.category" :style="{ backgroundImage: 'url(.' + post.image[0] + ')' }" :to="{ name: 'project', params: { id: post.pathnameId, post } }">
                 <div class="block__content_post-background">
                     <span>
                         <strong>{{post.title}},</strong> {{post.year}}<br>
@@ -31,9 +31,21 @@ export default {
       });
     }
   },
-  mounted() {
-
-  }
+  created: function() {
+            this.posts[this.language.numOfLang].forEach( post => {
+                const arrTemp = post.image.map( (path, i) => {
+                    if (path.match('.jpg') !== null) {
+                        return path;
+                    }
+                    const lengthName = (i + 1).toString().length;
+                    switch(lengthName) {
+                        case 1: return path = `${path}00${i + 1}.jpg`;
+                        case 2: return path = `${path}0${i + 1}.jpg`;
+                    }
+                })
+                post.image = arrTemp;
+            })           
+    },
 }
 </script>
 <style lang="scss">

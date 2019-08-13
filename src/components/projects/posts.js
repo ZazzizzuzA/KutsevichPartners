@@ -3,10 +3,10 @@ export default [
     [{
             title: "Торгово-развлекательный центр",
             image: [
-                "./assets/images/projects/1/001.jpg",
-                "./assets/images/projects/1/002.jpg",
-                "./assets/images/projects/1/003.jpg",
-                "./assets/images/projects/1/004.jpg"
+                "./assets/images/projects/1/",
+                "./assets/images/projects/1/",
+                "./assets/images/projects/1/",
+                "./assets/images/projects/1/"
             ],
             country: "Эр-Рияд, Саудоваская Аравия",
             year: 2017,
@@ -14,6 +14,7 @@ export default [
             id: 1,
             typeId: 1,
             type: "exterior",
+            pathnameId: 1,
             description: [
                 
                 "Концепция многофункционального центра предполагает создание комплекса зданий различного назначения: офисной недвижимости; ресторанов и кафе; торгово-развлекательного центра с кинотеатром и аттракционами. Общая площадь комплекса 200 000 м2.",
@@ -26,14 +27,14 @@ export default [
         {
             title: "Многофункциональный центр",
             image: [
-                "./assets/images/projects/2/001.jpg",
-                "./assets/images/projects/2/002.jpg",
-                "./assets/images/projects/2/003.jpg",
-                "./assets/images/projects/2/004.jpg",
-                "./assets/images/projects/2/005.jpg",
-                "./assets/images/projects/2/006.jpg",
-                "./assets/images/projects/2/007.jpg",
-                "./assets/images/projects/2/008.jpg"
+                "./assets/images/projects/2/",
+                "./assets/images/projects/2/",
+                "./assets/images/projects/2/",
+                "./assets/images/projects/2/",
+                "./assets/images/projects/2/",
+                "./assets/images/projects/2/",
+                "./assets/images/projects/2/",
+                "./assets/images/projects/2/"
             ],
             country: "Джидда, Саудовская Аравия",
             year: 2018,
@@ -41,6 +42,7 @@ export default [
             id: 2,
             typeId: 2,
             type: "exterior",
+            pathnameId: 2,
             description: [
                 "Концепция данного многофункционального центра предусматривает создание традиционного ТРЦ с круговой крытой галереей, но дополненной дублирующей ее открытой торговой галереей, где будет расположена street retail. В состав многофункционального центра также входит здание многоэтажной гостиницы и подземный паркинг. Общая площадь комплекса 210 000 м2.",
 
@@ -52,34 +54,36 @@ export default [
         {
             title: "Реконструкция Многофункционального центра",
             image: [
-                "./assets/images/projects/3/001.jpg",
-                "./assets/images/projects/3/002.jpg",
-                "./assets/images/projects/3/003.jpg",
-                "./assets/images/projects/3/004.jpg"
+                "./assets/images/projects/3/",
+                "./assets/images/projects/3/",
+                "./assets/images/projects/3/",
+                "./assets/images/projects/3/"
             ],
             country: "Джидда, Саудовская Аравия",
             year: 2018,
             stage: "Проект",
-            id: 3,
+            id: 4,
             typeId: 3,
             type: "exterior",
+            pathnameId: 3,
             description: ""
         },
         {
             title: "Жилой комплекс",
             image: [
-                "./assets/images/projects/4/001.jpg",
-                "./assets/images/projects/4/002.jpg",
-                "./assets/images/projects/4/003.jpg",
-                "./assets/images/projects/4/004.jpg",
-                "./assets/images/projects/4/005.jpg"
+                "./assets/images/projects/4/",
+                "./assets/images/projects/4/",
+                "./assets/images/projects/4/",
+                "./assets/images/projects/4/",
+                "./assets/images/projects/4/"
             ],
             country: "Марибор, Словения",
             year: 2018,
             stage: "Стадия проект",
-            id: 6,
+            id: 7,
             typeId: 7,
             type: "exterior",
+            pathnameId: 4,
             description: [
                 
                 "Идея жилого комплекса заключается в создании разно-типовой, разно-этажной жилой застройки, живописно вписанный в рельефный участок.",
@@ -92,245 +96,276 @@ export default [
         {
             title: "Реконструкция Торгово-развлекательного центра",
             image: [
-                "./assets/images/projects/5/001.jpg",
-                "./assets/images/projects/5/002.jpg",
-                "./assets/images/projects/5/003.jpg",
-                "./assets/images/projects/5/004.jpg",
-                "./assets/images/projects/5/005.jpg",
-                "./assets/images/projects/5/006.jpg",
-                "./assets/images/projects/5/007.jpg",
-                "./assets/images/projects/5/008.jpg"
+                "./assets/images/projects/5/",
+                "./assets/images/projects/5/",
+                "./assets/images/projects/5/",
+                "./assets/images/projects/5/",
+                "./assets/images/projects/5/",
+                "./assets/images/projects/5/",
+                "./assets/images/projects/5/",
+                "./assets/images/projects/5/"
             ],
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2018,
             stage: "Проект",
-            id: 4,
+            id: 5,
             typeId: 4,
             type: "exterior",
+            pathnameId: 5,
             description: ""
         },
         {
             title: "Реконструкция торгово-развлекательного центра",
             image: [
-                "./assets/images/projects/16/001.jpg",
-                "./assets/images/projects/16/002.jpg",
-                "./assets/images/projects/16/003.jpg",
-                "./assets/images/projects/16/004.jpg",
-                "./assets/images/projects/16/005.jpg",
-                "./assets/images/projects/16/006.jpg",
-                "./assets/images/projects/16/007.jpg",
-                "./assets/images/projects/16/008.jpg",
-                "./assets/images/projects/16/009.jpg"
+                "./assets/images/projects/16/",
+                "./assets/images/projects/16/",
+                "./assets/images/projects/16/",
+                "./assets/images/projects/16/",
+                "./assets/images/projects/16/",
+                "./assets/images/projects/16/",
+                "./assets/images/projects/16/",
+                "./assets/images/projects/16/",
+                "./assets/images/projects/16/"
             ],
             country: "Джидда, Саудовская Аравия",
             year: 2019,
             stage: "",
-            id: 5,
+            id: 6,
             typeId: 5,
             type: "exterior",
+            pathnameId: 16,
             description: ""
         },
         {
             title: "Купольный жилой дом",
             image: [
-                "./assets/images/projects/6/001.jpg",
-                "./assets/images/projects/6/002.jpg",
-                "./assets/images/projects/6/003.jpg",
-                "./assets/images/projects/6/004.jpg",
-                "./assets/images/projects/6/005.jpg",
-                "./assets/images/projects/6/006.jpg"
+                "./assets/images/projects/6/",
+                "./assets/images/projects/6/",
+                "./assets/images/projects/6/",
+                "./assets/images/projects/6/",
+                "./assets/images/projects/6/",
+                "./assets/images/projects/6/"
             ],
             country: "Малая Ольшанка, Украина",
             year: 2018,
             stage: "",
-            id: 7,
+            id: 8,
             typeId: 6,
             type: "exterior",
+            pathnameId: 6,
             description: ""
         },
         {
             title: "Индивидуальный жилой дом",
             image: [
-                "./assets/images/projects/7/001.jpg",
-                "./assets/images/projects/7/002.jpg",
-                "./assets/images/projects/7/003.jpg",
-                "./assets/images/projects/7/004.jpg",
-                "./assets/images/projects/7/005.jpg",
-                "./assets/images/projects/7/006.jpg",
-                "./assets/images/projects/7/007.jpg",
-                "./assets/images/projects/7/008.jpg",
-                "./assets/images/projects/7/009.jpg",
-                "./assets/images/projects/7/010.jpg",
-                "./assets/images/projects/7/011.jpg",
-                "./assets/images/projects/7/012.jpg",
-                "./assets/images/projects/7/013.jpg",
-                "./assets/images/projects/7/014.jpg"
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/",
+                "./assets/images/projects/7/"
             ],
             country: "Большая Александровка, Украина",
             year: 2012,
             stage: "",
-            id: 8,
+            id: 9,
             typeId: 12,
             type: "exterior",
+            pathnameId: 7,
             description: ""
         },
         {
             title: "Индивидуальный жилой дом",
             image: [
-                "./assets/images/projects/8/001.jpg",
-                "./assets/images/projects/8/002.jpg",
-                "./assets/images/projects/8/003.jpg",
-                "./assets/images/projects/8/004.jpg",
-                "./assets/images/projects/8/005.jpg",
-                "./assets/images/projects/8/006.jpg",
-                "./assets/images/projects/8/007.jpg",
-                "./assets/images/projects/8/008.jpg",
-                "./assets/images/projects/8/009.jpg"
+                "./assets/images/projects/8/",
+                "./assets/images/projects/8/",
+                "./assets/images/projects/8/",
+                "./assets/images/projects/8/",
+                "./assets/images/projects/8/",
+                "./assets/images/projects/8/",
+                "./assets/images/projects/8/",
+                "./assets/images/projects/8/",
+                "./assets/images/projects/8/"
             ],
             country: "Малая Александровка, Украина",
             year: 2016,
             stage: "",
-            id: 9,
+            id: 10,
             typeId: 11,
             type: "exterior",
+            pathnameId: 8,
             description: ""
         },
         {
             title: "Индивидуальный жилой дом",
             image: [
-                "./assets/images/projects/9/001.jpg",
-                "./assets/images/projects/9/002.jpg",
-                "./assets/images/projects/9/003.jpg",
-                "./assets/images/projects/9/004.jpg",
-                "./assets/images/projects/9/005.jpg",
-                "./assets/images/projects/9/006.jpg",
-                "./assets/images/projects/9/007.jpg",
-                "./assets/images/projects/9/008.jpg",
-                "./assets/images/projects/9/009.jpg"
+                "./assets/images/projects/9/",
+                "./assets/images/projects/9/",
+                "./assets/images/projects/9/",
+                "./assets/images/projects/9/",
+                "./assets/images/projects/9/",
+                "./assets/images/projects/9/",
+                "./assets/images/projects/9/",
+                "./assets/images/projects/9/",
+                "./assets/images/projects/9/"
             ],
             country: "Гнедин, Украина",
             year: 2016,
             stage: "",
-            id: 10,
+            id: 11,
             typeId: 10,
             type: "exterior",
+            pathnameId: 9,
             description: ""
         },
         {
             title: "Индивидуальный жилой дом",
             image: [
-                "./assets/images/projects/10/001.jpg",
-                "./assets/images/projects/10/002.jpg",
-                "./assets/images/projects/10/003.jpg",
-                "./assets/images/projects/10/004.jpg",
-                "./assets/images/projects/10/005.jpg",
-                "./assets/images/projects/10/006.jpg",
-                "./assets/images/projects/10/007.jpg",
-                "./assets/images/projects/10/008.jpg",
-                "./assets/images/projects/10/009.jpg",
-                "./assets/images/projects/10/010.jpg"
+                "./assets/images/projects/10/",
+                "./assets/images/projects/10/",
+                "./assets/images/projects/10/",
+                "./assets/images/projects/10/",
+                "./assets/images/projects/10/",
+                "./assets/images/projects/10/",
+                "./assets/images/projects/10/",
+                "./assets/images/projects/10/",
+                "./assets/images/projects/10/",
+                "./assets/images/projects/10/"
             ],
             country: "Копачив, Украина",
             year: 2015,
             stage: "",
-            id: 11,
+            id: 12,
             typeId: 9,
             type: "exterior",
+            pathnameId: 10,
             description: ""
         },
         {
             title: "Индивидуальный жилой дом",
             image: [
-                "./assets/images/projects/11/001.jpg",
-                "./assets/images/projects/11/002.jpg",
-                "./assets/images/projects/11/003.jpg",
-                "./assets/images/projects/11/004.jpg",
-                "./assets/images/projects/11/005.jpg",
-                "./assets/images/projects/11/006.jpg"
+                "./assets/images/projects/11/",
+                "./assets/images/projects/11/",
+                "./assets/images/projects/11/",
+                "./assets/images/projects/11/",
+                "./assets/images/projects/11/",
+                "./assets/images/projects/11/"
             ],
             country: "Путровка, Украина",
             year: 2015,
             stage: "",
-            id: 12,
+            id: 13,
             typeId: 8,
             type: "exterior",
+            pathnameId: 11,
             description: ""
         },
         {
             title: "Вилла",
             image: [
-                "./assets/images/projects/12/001.jpg",
-                "./assets/images/projects/12/002.jpg",
-                "./assets/images/projects/12/003.jpg",
-                "./assets/images/projects/12/004.jpg",
-                "./assets/images/projects/12/005.jpg",
-                "./assets/images/projects/12/006.jpg",
-                "./assets/images/projects/12/007.jpg",
-                "./assets/images/projects/12/008.jpg",
-                "./assets/images/projects/12/009.jpg"
+                "./assets/images/projects/12/",
+                "./assets/images/projects/12/",
+                "./assets/images/projects/12/",
+                "./assets/images/projects/12/",
+                "./assets/images/projects/12/",
+                "./assets/images/projects/12/",
+                "./assets/images/projects/12/",
+                "./assets/images/projects/12/",
+                "./assets/images/projects/12/"
             ],
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2019,
             stage: "",
-            id: 13,
-            typeId: 3,
+            id: 14,
+            typeId: 4,
             type: "interior",
+            pathnameId: 12,
             description: ""
         },
         {
             title: "Торгово-развлекательный центр",
             image: [
-                "./assets/images/projects/13/001.jpg",
-                "./assets/images/projects/13/002.jpg",
-                "./assets/images/projects/13/003.jpg",
-                "./assets/images/projects/13/004.jpg",
-                "./assets/images/projects/13/005.jpg"
+                "./assets/images/projects/13/",
+                "./assets/images/projects/13/",
+                "./assets/images/projects/13/",
+                "./assets/images/projects/13/",
+                "./assets/images/projects/13/"
             ],
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2018,
             stage: "",
-            id: 14,
+            id: 15,
             typeId: 1,
             type: "interior",
+            pathnameId: 13,
             description: ""
         },
         {
             title: "Многофункциональный центр",
             image: [
-                "./assets/images/projects/14/001.jpg",
-                "./assets/images/projects/14/002.jpg",
-                "./assets/images/projects/14/003.jpg"
+                "./assets/images/projects/14/",
+                "./assets/images/projects/14/",
+                "./assets/images/projects/14/"
             ],
             country: "Джидда, Саудовская Аравия",
             year: 2018,
             stage: "Реализован",
-            id: 15,
+            id: 16,
             typeId: 2,
             type: "interior",
+            pathnameId: 14,
             description: ""
         },
         {
             title: "Бильярдный клуб \"Буффало\"",
             image: [
-                "./assets/images/projects/15/001.jpg",
-                "./assets/images/projects/15/002.jpg",
-                "./assets/images/projects/15/003.jpg",
-                "./assets/images/projects/15/004.jpg",
-                "./assets/images/projects/15/005.jpg",
-                "./assets/images/projects/15/006.jpg",
-                "./assets/images/projects/15/007.jpg"
+                "./assets/images/projects/15/",
+                "./assets/images/projects/15/",
+                "./assets/images/projects/15/",
+                "./assets/images/projects/15/",
+                "./assets/images/projects/15/",
+                "./assets/images/projects/15/",
+                "./assets/images/projects/15/"
             ],
             country: "Киев, Украина",
             year: 2012,
             stage: "Реализован",
-            id: 16,
-            typeId: 4,
+            id: 17,
+            typeId: 5,
             type: "interior",
+            pathnameId: 15,
+            description: ""
+        },
+        {
+            title: "Реконструкция торгово-развлекательного центра",
+            image: [
+                "./assets/images/projects/17/",
+                "./assets/images/projects/17/",
+                "./assets/images/projects/17/",
+                "./assets/images/projects/17/",
+                "./assets/images/projects/17/",
+                "./assets/images/projects/17/"
+            ],
+            country: "Джидда, Саудовская Аравия",
+            year: 2019,
+            stage: "Реализован",
+            id: 3,
+            typeId: 3,
+            type: "interior",
+            pathnameId: 17,
             description: ""
         }
 
     ],
-    // English
+    // English (data invalid, make a copy from rus array and translate)
     [{
             title: "Mixed-Use Centre",
             image: [
@@ -345,6 +380,7 @@ export default [
             id: 1,
             typeId: 3,
             type: "exterior",
+            pathnameId: 1,
             description: ""
         },
         {

@@ -79,15 +79,15 @@ export default {
 
       shadow.classList.remove("popup-show");
       parent.classList.remove("hidden-overflow");
-      if (item !== undefined) parent.removeChild(item);
+      if (item) parent.removeChild(item);
       shadow.classList.add("popup-hide");
     }
   },
   created: function() {
-    let projectId = this.$route.params.id;
-    for (let arr of this.posts) {
-      this.project.push(arr[projectId]);
-    }
+    // let projectId = this.$route.params.post;
+    // for (let arr of this.posts) {
+      this.project.push(this.$route.params.post);
+    // }
   },
   mounted: function() {
     if (navigator.userAgent.indexOf("Edge") !== -1) {
