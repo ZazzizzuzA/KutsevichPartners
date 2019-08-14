@@ -39,6 +39,7 @@
         <div class="post__project-info_article-text">
           <!-- <h3>Название абзаца 3</h3> -->
           <p>{{project[language.numOfLang].description[2]}}</p>
+          <p class="partnership" v-if="project[language.numOfLang].description[3]">{{project[language.numOfLang].description[3]}}</p>
         </div>
       </div>
     </div>
@@ -56,6 +57,14 @@
     <div class="popup-shadow popup-hide" @click="popupClose()"></div>
   </div>
 </template>
+<style lang="scss">
+  .partnership {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 3em;
+    text-decoration: underline;
+  }
+</style>
 <script>
 import posts from "./posts";
 import language from "../../settings/language";
