@@ -58,12 +58,8 @@
   </div>
 </template>
 <style lang="scss">
-  .partnership {
-    font-size: 1.5rem;
-    font-style: italic;
-    margin-top: 3em;
-    text-decoration: underline;
-  }
+
+
 </style>
 <script>
 import posts from "./posts";
@@ -83,8 +79,8 @@ export default {
   methods: {
     popupClose: function() {
       let shadow = document.querySelector(".popup-shadow"),
-        item = document.querySelector(".popup-center-show"),
-        parent = document.getElementsByTagName("body")[0];
+          item = document.querySelector(".popup-center-show"),
+          parent = document.getElementsByTagName("body")[0];
 
       shadow.classList.remove("popup-show");
       parent.classList.remove("hidden-overflow");

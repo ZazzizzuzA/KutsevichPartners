@@ -507,4 +507,31 @@
     }
 }
 
-@media (max-width: 640px) {}
+@media (max-width: 640px) {
+    .container {
+        .post{
+            &__project-info{
+                padding: 0px 20px 0px 20px;
+                &_article{
+                    flex-flow: column wrap;
+                    &-foto {
+                        margin: 0 0 15px 0;
+                    }
+                    .ml{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .popup-center-show {
+        max-width: 100%;
+        .owl-item {
+            width: 100vw !important;
+            padding: 0 !important;
+            img {
+                min-height: 300px;
+            }
+        }
+    }
+}
