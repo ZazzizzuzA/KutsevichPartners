@@ -43,8 +43,7 @@ module.exports = {
                 use:{
                     loader: "file-loader",
                     options: {
-                        emitFile: false,
-                        name: '[path][name].[ext]',
+                        name: '[path][name].[ext]'
                     }
                 } 
             },
@@ -54,9 +53,8 @@ module.exports = {
                 {
                     loader: "url-loader",
                     options: {
-                        emitFile: false,
                         name: '[path][name].[ext]',
-                        limit: 8000,
+                        limit: 8192
                     }
                 }
             ]
@@ -81,7 +79,11 @@ module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({ template: "./index.html" }),
-        new CopyWebpackPlugin([{ from: 'assets/**/*' }]),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'assets/**/*' }
+            ]
+        }),
         // new MiniCssExtractPlugin({
         //     filename: "./css/[name].css",
         //   }),

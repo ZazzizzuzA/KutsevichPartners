@@ -5,9 +5,9 @@ import About from "./components/about";
 import Contacts from './components/contacts';
 import Team from './components/team/team';
 import Projects from './components/projects/projects';
-import Lost from './components/lost';
 import Home from './components/home';
-import Category from './components/category';
+import CategoryInterior from './components/categoryInterior';
+import CategoryExterior from './components/categoryExterior';
 import Project from './components/projects/project';
 
 Vue.use(VueRouter);
@@ -36,9 +36,14 @@ let routes = [{
         component: Contacts
     },
     {
-        path: "/projects/:category",
-        name: 'category',
-        component: Category
+        path: "/projects/interior",
+        name: 'categoryInt',
+        component: CategoryInterior
+    },
+    {
+        path: "/projects/exterior",
+        name: 'categoryExt',
+        component: CategoryExterior
     },
     {
         path: "/project/:id",

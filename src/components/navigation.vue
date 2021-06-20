@@ -1,7 +1,7 @@
 <template>
   <nav class="block-nav__full-head">
     <router-link id="logoKutsevich" class="block-nav__full-head_logotype" to="/">
-      <img src="../../assets/images/logo.png" alt="logotype">
+      <img :src="pathToLogo" alt="logotype">
     </router-link>
     <div class="block-nav__full-head_navigation" v-if="smallScreen === false">
       <router-link
@@ -87,7 +87,7 @@
         target="_blank"
         title="Facebook"
       >
-        <img src="../../assets/images/icons/facebook.png" alt="fb">
+        <img :src="pathToFBLogo" alt="fb">
       </a>
       <!-- <a href="https://share.yandex.net/go.xml?service=vkontakte&url=http%3A%2F%2Fwww.kutsevych.com%2F&title=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%9A%D1%83%D1%86%D0%B5%D0%B2%D0%B8%D1%87%20%2B%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%8B%20-%20%D0%93%D0%9B%D0%90%D0%92%D0%9D%D0%90%D0%AF" class="vk" target="_blank" title="ВКонтакте">
                 <img src="../../assets/images/icons/vk.png" alt="vk">
@@ -125,14 +125,14 @@
     >
       <router-link
         class="block-nav__full-head_navigation-link"
-        :to="{ name: 'category', params: { category: 'interior' } }"
+        :to="{ name: 'categoryInt', params: { category: 'interior' } }"
       >
         <span @click="closeOnlyMenu()">{{titles[language.numOfLang].interior}}</span>
       </router-link>
       <div class="border-line"></div>
       <router-link
         class="block-nav__full-head_navigation-link"
-        :to="{ name: 'category', params: { category: 'exterior' } }"
+        :to="{ name: 'categoryExt', params: { category: 'exterior' } }"
       >
         <span @click="closeOnlyMenu()">{{titles[language.numOfLang].exterior}}</span>
       </router-link>
@@ -147,7 +147,11 @@ import language from "../settings/language";
 export default {
   name: "navigation",
   data: function() {
+    const pathToLogo = '../../assets/images/logo.png';
+    const pathToFBLogo = '../../assets/images/icons/facebook.png';
     return {
+      pathToLogo,
+      pathToFBLogo,
       isActive: true,
       showCat: true,
       smallScreen: false,

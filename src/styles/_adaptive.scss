@@ -1,3 +1,19 @@
+@media (max-width: 1465px) {
+    .container {
+        .post {
+            &__project-info {
+                padding: 30px 20px 0px 20px;
+                &_article {
+                    &-foto {
+                        min-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media (max-width: 1366px) {
     .container {
         .block-nav__full-head_navigation {
@@ -56,8 +72,12 @@
 
         .post {
             &__project-info {
-                padding: 100px 20px 0px 20px;
-
+                padding: 30px 20px 0px 20px;
+                &_article {
+                    &-foto {
+                        min-height: 340px;
+                    }
+                }
             }
         }
     }
@@ -121,7 +141,6 @@
             &__info {
                 &_content {
                     padding: 0px 20px 30px 20px;
-
                     p {
                         font-size: 2em;
                     }
@@ -194,7 +213,7 @@
 
         .post {
             &__project-info {
-                padding: 50px 20px 0px 20px;
+                padding: 30px 20px 0px 20px;
 
                 &_article {
                     padding-top: 15px;
@@ -340,17 +359,20 @@
             }
 
             &__info {
+                flex-flow: column wrap;
                 &_content {
                     margin-top: 15px;
-                    padding: 0px 10px 15px 10px;
-
+                    padding: 0px 15px 15px 15px;
                     p {
-                        font-size: 1.2em;
+                        font-size: 1.4em;
+                        width: 100%;
+                        padding: 0;
                     }
-
                     .middle-row {
                         width: 100%;
-                        font-size: 1.1em;
+                        font-size: 1.4em;
+                        text-align: justify;
+                        padding: 0;
                     }
                 }
             }
@@ -457,7 +479,7 @@
 
         .post {
             &__project-info {
-                padding: 50px 20px 0px 20px;
+                padding: 30px 20px 0px 20px;
 
                 &_article {
                     padding-top: 15px;
@@ -473,7 +495,7 @@
                     &-foto {
                         margin-right: 15px;
                         background-position: 0px 5px;
-                        min-height: 250px;
+                        min-height: 200px;
                     }
 
                     .ml {
@@ -523,6 +545,18 @@
                 }
             }
         }
+        .block-home {
+            &__info {
+                &_content {
+                    p {
+                        font-size: 1.2em;
+                    }
+                    .middle-row {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
     }
     .popup-center-show {
         max-width: 100%;
@@ -534,4 +568,5 @@
             }
         }
     }
+
 }

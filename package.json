@@ -4,9 +4,9 @@
   "description": "Architect's site",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode=production",
-    "dev": "webpack --mode=development",
-    "http": "webpack-dev-server --mode=development"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "http": "webpack serve --mode development"
   },
   "repository": {
     "type": "git",
@@ -22,31 +22,26 @@
   },
   "homepage": "https://github.com/ZazzizzuzA/KutsevichPartners#readme",
   "dependencies": {
-    "animate.css": "^3.7.0",
-    "autoprefixer": "^9.1.5",
-    "copy-webpack-plugin": "^4.5.2",
-    "css-loader": "^1.0.0",
-    "file-loader": "^2.0.0",
-    "firebase": "^5.8.2",
-    "html-webpack-plugin": "^3.2.0",
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.2.6",
+    "copy-webpack-plugin": "^9.0.0",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "firebase": "^8.6.8",
+    "html-webpack-plugin": "^5.3.1",
     "i": "^0.3.6",
-    "mini-css-extract-plugin": "^0.4.3",
-    "node-sass": "^4.9.3",
-    "npm": "^6.8.0",
+    "mini-css-extract-plugin": "^1.6.0",
     "owl.carousel": "^2.3.4",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.0",
-    "url-loader": "^1.1.1",
-    "vue": "^2.5.17",
-    "vue-loader": "^15.4.2",
-    "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.5.17",
-    "vuefire": "^1.4.5",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14",
-    "webpack-encoding-plugin": "^0.2.1",
+    "postcss-loader": "^6.1.0",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^2.0.0",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.7",
+    "vue-router": "^3.5.1",
+    "vue-template-compiler": "^2.6.14",
+    "vuefire": "^2.2.5",
+    "webpack-encoding-plugin": "^0.3.1",
     "webpack-jquery-ui": "^2.0.1"
   },
   "browserslist": [
@@ -56,5 +51,10 @@
     "IE 9",
     "IE 8"
   ],
-  "devDependencies": {}
+  "devDependencies": {
+    "url-loader": "^4.1.1",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
 }

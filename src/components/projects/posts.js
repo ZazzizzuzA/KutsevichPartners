@@ -92,7 +92,7 @@ export default [
             year: 2018,
             stage: "Стадия проект",
             id: 6,
-            typeId: 7,
+            typeId: 8,
             type: "exterior",
             pathnameId: 4,
             description: [
@@ -178,7 +178,7 @@ export default [
             year: 2018,
             stage: "",
             id: 7,
-            typeId: 6,
+            typeId: 7,
             type: "exterior",
             pathnameId: 6,
             description: [
@@ -211,7 +211,7 @@ export default [
             year: 2012,
             stage: "",
             id: 8,
-            typeId: 12,
+            typeId: 13,
             type: "exterior",
             pathnameId: 7,
             description: [
@@ -238,8 +238,8 @@ export default [
             country: "Малая Александровка, Украина",
             year: 2016,
             stage: "",
-            id: 9,
-            typeId: 11,
+            id: 10,
+            typeId: 12,
             type: "exterior",
             pathnameId: 8,
             description: [
@@ -266,8 +266,8 @@ export default [
             country: "Гнедин, Украина",
             year: 2016,
             stage: "",
-            id: 10,
-            typeId: 10,
+            id: 11,
+            typeId: 11,
             type: "exterior",
             pathnameId: 9,
             description: [
@@ -295,8 +295,8 @@ export default [
             country: "Копачив, Украина",
             year: 2015,
             stage: "",
-            id: 11,
-            typeId: 9,
+            id: 12,
+            typeId: 10,
             type: "exterior",
             pathnameId: 10,
             description: ""
@@ -314,8 +314,8 @@ export default [
             country: "Путровка, Украина",
             year: 2015,
             stage: "",
-            id: 12,
-            typeId: 8,
+            id: 13,
+            typeId: 9,
             type: "exterior",
             pathnameId: 11,
             description: ""
@@ -336,8 +336,8 @@ export default [
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2019,
             stage: "",
-            id: 13,
-            typeId: 5,
+            id: 14,
+            typeId: 6,
             type: "interior",
             pathnameId: 12,
             description: ["", "", "", "Проект разработан совместно с компанией Rumoz."]
@@ -354,8 +354,8 @@ export default [
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2018,
             stage: "",
-            id: 14,
-            typeId: 1,
+            id: 15,
+            typeId: 2,
             type: "interior",
             pathnameId: 13,
             description: ["", "", "", "Проект разработан совместно с компанией Rumoz."]
@@ -370,8 +370,8 @@ export default [
             country: "Джидда, Саудовская Аравия",
             year: 2018,
             stage: "Реализован",
-            id: 15,
-            typeId: 2,
+            id: 16,
+            typeId: 3,
             type: "interior",
             pathnameId: 14,
             description: ["", "", "", "Проект разработан совместно с компанией Rumoz."]
@@ -390,8 +390,8 @@ export default [
             country: "Киев, Украина",
             year: 2012,
             stage: "Реализован",
-            id: 17,
-            typeId: 6,
+            id: 18,
+            typeId: 7,
             type: "interior",
             pathnameId: 15,
             description: ""
@@ -409,8 +409,8 @@ export default [
             country: "Джидда, Саудовская Аравия",
             year: 2019,
             stage: "Реализован",
-            id: 16,
-            typeId: 3,
+            id: 17,
+            typeId: 4,
             type: "interior",
             pathnameId: 17,
             description: ["", "", "", "Проект разработан совместно с компанией Rumoz."]
@@ -428,12 +428,62 @@ export default [
             country: "Эр-Рияд, Саудовская Аравия",
             year: 2019,
             stage: "Реализован",
-            id: 18,
-            typeId: 4,
+            id: 19,
+            typeId: 5,
             type: "interior",
             pathnameId: 18,
             description: ["", "", "", "Проект разработан совместно с компанией Rumoz."]
-        }
+        },
+        {
+            title: "Торгово-развлекательный центр",
+            image: [
+                "./assets/images/projects/19/",
+                "./assets/images/projects/19/",
+                "./assets/images/projects/19/",
+                "./assets/images/projects/19/",
+                "./assets/images/projects/19/",
+                "./assets/images/projects/19/",
+                "./assets/images/projects/19/"
+            ],
+            country: "Джидда, Саудовская Аравия",
+            year: 2020,
+            stage: "Реализован",
+            id: 9,
+            typeId: 1,
+            type: "interior",
+            pathnameId: 19,
+            description: [
+                "", 
+                "", 
+                "", 
+                "Проект разработан совместно с компанией Rumoz."
+            ]
+        },
+        {
+            title: "Офисный центр",
+            image: [
+                "./assets/images/projects/20/",
+                "./assets/images/projects/20/",
+                "./assets/images/projects/20/",
+                "./assets/images/projects/20/",
+                "./assets/images/projects/20/",
+                "./assets/images/projects/20/"
+            ],
+            country: "Эр-Рияд, Саудовская Аравия",
+            year: 2021,
+            stage: "Реализован",
+            id: 20,
+            typeId: 6,
+            type: "exterior",
+            pathnameId: 20,
+            description: [
+                "Офисный центр переставляет собой комплекс из шести зданий объединенных большим пешеходным променадом между ними. Под всем комплексом находится двух этажный подземный паркинг на 1400 авто, а на поверхности расположено только шесть гостевых автостоянок на 100 авто. Высотность комплекса ограничена городскими требованиями и составляет три - четыре этажа. Общая площадь комплекса 150 000 м2.",
+
+                "Офисные помещения комплекса обладают открытой планировкой, хорошей естественной освещенностью и оснащены внешней солнцезащитой. Также помещения имеют выходы на балконы и эксплуатируемые озелененные террасы. Первый этаж комплекса занимают кафе, рестораны и магазины. Эти помещения рассчитаны как на офисных работников, так и на горожан живущих и работающих в окружающих зданиях.",
+
+                "Между офисными блоками находится обширное публичное пространство – променад. Это пространство призвано быть своеобразным центром притяжения района, местом для пешеходных прогулок и проведения досуга. Променад имеет комфортное благоустройство с большим количеством озеленения, теневыми навесами, местами для отдыха, торговыми киосками и террасами ресторанов, фонтанами, public art."
+            ]
+        },
 
     ],
     // English (data invalid, make a copy from rus array and translate)
